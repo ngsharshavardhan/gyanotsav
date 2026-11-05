@@ -90,7 +90,7 @@
 
   <!-- Hero Section -->
   <section
-    class="relative bg-navy-900 text-white py-8 md:pt-20 md:pb-24 px-4 overflow-hidden border-b border-slate-800">
+    class="relative bg-navy-900 text-white py-4 md:pt-20 md:pb-24 px-4 overflow-hidden border-b border-slate-800">
     <!-- Subtle Background Grid/Glow Accent -->
     <div
       class="absolute inset-0 opacity-10 bg-[radial-gradient(#00d2ff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none">
@@ -98,7 +98,7 @@
     <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-    <div class="max-w-4xl mx-auto text-center relative z-10 space-y-6">
+    <div class="max-w-4xl mx-auto text-center relative z-10 space-y-2">
 
       <!-- Date Badge -->
       <div
@@ -145,7 +145,7 @@
     <!-- SECTION 1: TECHNICAL PARALLEL SESSIONS -->
     <section id="parallel-section" class="scroll-mt-20 space-y-2">
       <div class="border-l-4 border-blue-600 pl-4 py-1">
-        <h2 class="text-2xl font-bold text-slate-900">Paper Presentation Sessions</h2>
+        <h2 class="text-xl font-bold text-slate-900">Paper Presentation Sessions</h2>
         <p class="text-xs sm:text-sm text-slate-500">Filtered hall-by-hall</p>
         <ul class="text-xs sm:text-sm text-slate-600 leading-relaxed m-0 p-0 ml-2">
           <li>Hall A: Dr. APJ Abdul Kalam Hall</li>
@@ -194,7 +194,7 @@
         </div>
 
         <!-- Papers Container -->
-        <div id="parallelList" class="p-4 sm:p-6 space-y-3 bg-slate-50/50">
+        <div id="parallelList" class="p-2 sm:p-6 space-y-3 bg-slate-50/50">
           <!-- Populated dynamically via JS -->
         </div>
       </div>
@@ -299,7 +299,7 @@
         title: "Session 6: RF Subsystems",
         hall: "HALL B: Sir C. V. Raman Hall",
         time: "15:00 - 17:15 (Day 1)",
-        chair: "Smt. Hemalatha B J, GM-MR",
+        chair: "Cmde. Srinivas (Retd), GM-A&A",
         cochair: "Shri. Rajkumar A, AGM PDIC",
         papers: [
           { time: "15:00-15:15", title: "Design Of Fast Startup Wide Input Power Supply Unit For Railway Tele-Powering Applications", id: "0110", author: "Venugopal B", sbu: "PDIC" },
@@ -366,7 +366,7 @@
         hall: "HALL B: Sir C. V. Raman Hall",
         time: "10:30 - 12:45 (Day 2)",
         chair: "Smt. Rekha Sastry, CTO-COMM",
-        cochair: "Shri. Rakesh Kumar Mall AGM Comp",
+        cochair: "Smt. Rekha Ashok Baradol, AGM,NWCS",
         papers: [
           { time: "10:30-10:45", title: "A Kubernetes-Native Autonomous Cyber Defense Platform with MLOps and Hybrid Detection for On-Premises C5I Networks", id: "0045", author: "Nishkarsh Patel", sbu: "CRL-GAD" },
           { time: "10:45-11:00", title: "A Multi-Context Aware SOAR Framework Using Retrieval-Augmented Generation for Intelligent Incident Response", id: "0102", author: "Rajat", sbu: "CRL-GAD" },
@@ -511,7 +511,7 @@
 
       // Render Paper Cards using your exact DOM structure
       listEl.innerHTML = session.papers.map(paper => `
-        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition border-l-4 border-l-blue-600">
+        <div class="bg-white p-2 rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition border-l-4 border-l-blue-600">
           <div class="text-xs font-bold text-blue-600 uppercase tracking-wide">⏱ ${paper.time}</div>
           <div class="font-semibold text-slate-900 mt-1 text-sm sm:text-base leading-snug">${paper.title}</div>
           <div class="flex items-center justify-between mt-3 text-xs text-slate-500 pt-2 border-t border-slate-100">

@@ -90,7 +90,7 @@
 
   <!-- Hero Section -->
   <section
-    class="relative bg-navy-900 text-white py-8 md:pt-20 md:pb-24 px-4 overflow-hidden border-b border-slate-800">
+    class="relative bg-navy-900 text-white py-4 md:pt-20 md:pb-24 px-4 overflow-hidden border-b border-slate-800">
     <!-- Subtle Background Grid/Glow Accent -->
     <div
       class="absolute inset-0 opacity-10 bg-[radial-gradient(#00d2ff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none">
@@ -98,7 +98,7 @@
     <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-    <div class="max-w-4xl mx-auto text-center relative z-10 space-y-6">
+    <div class="max-w-4xl mx-auto text-center relative z-10 space-y-2">
 
       <!-- Date Badge -->
       <div
@@ -135,6 +135,7 @@
         </svg>
         <span>Nalanda, BAE, BEL, Bangalore</span>
       </div>
+
     </div>
   </section>
 
@@ -142,9 +143,9 @@
   <main id="schedules" class="flex-1 max-w-5xl w-full mx-auto px-2 py-4 space-y-16">
 
     <!-- SECTION 2: POSTER PRESENTATIONS & SPECIAL SESSIONS -->
-    <section id="poster-section" class="scroll-mt-20 space-y-2 pt-6">
+    <section id="poster-section" class="scroll-mt-20 space-y-2">
       <div class="border-l-4 border-slate-700 pl-4 py-1">
-        <h2 class="text-2xl font-bold text-slate-900">Poster Presentation Sessions</h2>
+        <h2 class="text-xl font-bold text-slate-900">Poster Presentation Sessions</h2>
         <p class="text-xs sm:text-sm text-slate-500">Filtered Day and Session</p>
       </div>
 
@@ -169,8 +170,8 @@
             <thead>
               <tr
                 class="bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wider border-b border-slate-200">
-                <th class="py-3 px-4 w-16 text-center">Sl. No.</th>
-                <th class="py-3 px-4">Presenter / Paper Details</th>
+                <th class="py-2 px-2 w-16 text-center">Sl. No.</th>
+                <th class="py-2 px-2">Presenter / Paper Details</th>
               </tr>
             </thead>
             <tbody id="posterTableBody" class="divide-y divide-slate-200 text-sm">
@@ -198,133 +199,137 @@
     // 2. Full Data for Poster & Special Sessions
     const posterData = {
       "day1-session-1": [
-        { slno: "1", title: "Micro-Doppler Signatures for Classification of Drones using Micro-Doppler Signatures", id: "P0362", author: "Sai Maniva Vardhan Kanch...", sbu: "PDIC" },
-        { slno: "2", title: "Design of capacitive load cavity filter", id: "P0364", author: "Rahul Sethi", sbu: "MR" },
-        { slno: "3", title: "Design and Performance Validation of a High-Gain, Low-Noise S-Band Amplifier Assembly with Analog Attenuation Control", id: "P0368", author: "Shashi K L", sbu: "NS1" },
-        { slno: "4", title: "Generative Adversarial Network (GAN) - Based Synthetic Data Augmentation for Robust Fault Detection in Train Collision Avoidance System for Indian Railways", id: "P0369", author: "Manish Singh", sbu: "CRL-GAD" },
-        { slno: "5", title: "Benchmarking AI-based Path Planning Algorithms for Autonomous UAV Navigation in Dynamic Environments", id: "P0371", author: "Sanchit Saxena", sbu: "CRL-GAD" },
-        { slno: "6", title: "Oil Spill Detection from C-Band SAR Imagery Using U-Net Multitask", id: "P0372", author: "Tanya Agarwal", sbu: "CRL-GAD" },
-        { slno: "7", title: "A Federated Encrypted Key Management Architecture for Safety-Critical Railway Communication", id: "P0373", author: "Jayashreeka Deka", sbu: "CRL-GAD" },
-        { slno: "8", title: "Tool-tip development for automation and real-time verification and validation of comprehensive control modules used in phased array Radars", id: "P0374", author: "Shashi K. L.", sbu: "MR" },
-        { slno: "9", title: "Decentralized Policy-Based Access Control and Secure Mediated File Transfer for Removable Storage Devices", id: "P0377", author: "Surabhi Ashok Babu", sbu: "CRL-BG" },
-        { slno: "10", title: "Hydrodynamics and Thermal Optimization of Asymmetric Fractal Microchannel Cold Plate for Localized Hotspot Management", id: "P0378", author: "Puneet Wadhwa", sbu: "MR" },
-        { slno: "11", title: "Stack-up Aware Modal analysis of multilayer Printed Circuit Boards using Equivalent Orthotropic Material properties", id: "P0379", author: "Miss Tamanna Tamta", sbu: "PDIC" },
-        { slno: "12", title: "Automated Extraction of Railway Signalling Configuration from ATP RFID Tag Layout Drawings: A Hybrid Vector-Raster Pipeline", id: "P0380", author: "Shrestin Singh", sbu: "CRL-GAD" },
-        { slno: "13", title: "Sensor-Posemeter Mismatch as a Geometric Benchmark in ViT-Based Metric Depth Fine-Tuning", id: "P0383", author: "Ankita Kumar", sbu: "CRL-GAD" },
-        { slno: "14", title: "Finite Element Modeling and Fastener Validation of a Missile Seeker Assembly as per MIL-STD-810H.1", id: "P0386", author: "Lokeswara Rao Morla", sbu: "PDIC" },
-        { slno: "15", title: "AI-enabled Information Extraction from Army e-AFPPs for Battlefield Surveillance System: Comparative Evaluation of Named Entity Recognition Techniques", id: "P0391", author: "Shivam Singh", sbu: "CRL-GAD" },
-        { slno: "16", title: "Improving Web Application Firewall Performance by using Parallel Rule Evaluation Architecture", id: "P0392", author: "Priti Vamsakrishna", sbu: "CRL-BG" },
-        { slno: "17", title: "AI-Visual Based Pickles Object Range Estimation and Speed Detection", id: "P0394", author: "Rama Chamakpaya", sbu: "MC" },
-        { slno: "18", title: "Mitigation of Buoyancy-Induced Thermal Stagnation in Inverted Fin-Type Heat Sinks", id: "P0396", author: "Prem Kumar", sbu: "PDIC" },
-        { slno: "19", title: "Python verification of a coherent I/Q Optical Communication System with DSP algorithms", id: "P0398", author: "Rency Varghese", sbu: "COM-M" },
-        { slno: "20", title: "Evaluating Adversarial Robustness of Deep Learning Models for Sinkhole Attack Detection in RPL-based IoT Networks", id: "P0399", author: "Prashant Kumar Gupta", sbu: "CRL-GAD" },
-        { slno: "21", title: "Design and Implementation of an Architecture for Image Denoising", id: "P0401", author: "Rahul Mals", sbu: "CRL-BG" },
-        { slno: "22", title: "ZTAGM-A Business Process Devon Engineering Methodology for Zero Trust Architecture in Defence Manufacturing", id: "P0402", author: "Sunil Anil", sbu: "PK" },
-        { slno: "23", title: "A Compact Manifold for Efficient Thermal Management of Multi-Liquid Cold Plate System", id: "P0403", author: "Hemanth V. J.", sbu: "PDIC" },
-        { slno: "24", title: "Optimized Real-Time Data Distribution Architecture for Train Collision Avoidance System Network Monitoring", id: "P0406", author: "Jayashreeka Deka", sbu: "CRL-GAD" },
-        { slno: "25", title: "Airspace-Centric Advanced Network Detector for An-Assisted Abnormal Protocol Behaviour", id: "P0408", author: "Nimesh Nikhil", sbu: "CRL-GAD" },
-        { slno: "26", title: "Multi-Physics Structural Analysis of Composite Radome Subjected to Wind Sweep, Vibration Loads", id: "P0411", author: "Chirag N", sbu: "PDIC" },
-        { slno: "27", title: "Realization of Low Noise Ku-Band RF-Front End Receiver for Radar Application", id: "P0412", author: "Madhu Kumar N", sbu: "PDIC" },
-        { slno: "28", title: "GPU Accelerated Phase Correlation for Real-Time COMINT Direction Finding", id: "P0413", author: "Sai Deepika Dwarampudi", sbu: "HYD" },
-        { slno: "29", title: "Edge Intelligence for Orbital Cognitive Radar: A Lean Layered Architecture", id: "P0418", author: "Manish Patel", sbu: "CRL-GAD" },
-        { slno: "30", title: "Design of Wideband Front-end Receiver for EW Applications", id: "P0421", author: "Paramanand Patil", sbu: "PDIC" }
+        { "slno": "1", "title": "Ensembling Techniques for Classification of Drones using Micro-Doppler Signatures", "id": "P0352", "author": "Sai Harsha Vardhan Kareti", "sbu": "PDIC" },
+        { "slno": "2", "title": "Design of capacitive load cavity filter", "id": "P0004", "author": "Rahul Sadhu", "sbu": "MR" },
+        { "slno": "3", "title": "Design and Performance Validation of a High-Gain, Low-Noise S-Band Amplifier Assembly with Analog Attenuation Control", "id": "P0008", "author": "Sharath L", "sbu": "NS2" },
+        { "slno": "4", "title": "Generative Adversarial Network GAN - Based Synthetic Data Augmentation for Robust Fault Detection in Train Collision Avoidance System for Indian Railways", "id": "P0009", "author": "Jitendra Singh", "sbu": "CRL-GAD" },
+        { "slno": "5", "title": "Benchmarking AI-Based Path Planning Algorithms for Autonomous UAV Navigation in Dynamic Environments", "id": "P0011", "author": "Sanchit Saxena", "sbu": "CRL-GAD" },
+        { "slno": "6", "title": "Oil Spill Detection from C-Band SAR Imagery Using U-Net Multitask", "id": "P0012", "author": "Tanya Agrawal", "sbu": "CRL-GAD" },
+        { "slno": "7", "title": "A Federated, Encrypted Key Management Architecture for Safety-Critical Railway Communication", "id": "P0013", "author": "Sayahnneeta Dutta", "sbu": "CRL-GAD" },
+        { "slno": "8", "title": "Test Jig development for automated and real time verification and validation of comprehensive control modules used in phased array Radars", "id": "P0015", "author": "Sharath L", "sbu": "NS2" },
+        { "slno": "9", "title": "Centralized Policy-Based Access Control and Secure Mediated File Transfer for Removable Storage Devices", "id": "P0017", "author": "Surabhi Ashok Babu", "sbu": "CRL-BG" },
+        { "slno": "10", "title": "Hydrodynamic and Thermal Optimization of Asymmetric Fractal Branching Microchannel Cold Plate for Localized Hotspot Management", "id": "P0019", "author": "Puneet Dadhich", "sbu": "MS" },
+        { "slno": "11", "title": "Stack-up Aware Modal analysis of multi-layer Printed Circuit Boards using Equivalent Orthotropic Material properties", "id": "P0022", "author": "Nitta Tamaswi Tania", "sbu": "PDIC" },
+        { "slno": "12", "title": "Automated Extraction of Railway Signalling Configuration from ATP RFID Tag Layout Drawings A Hybrid Vector-Raster Pipeline", "id": "P0025", "author": "Jitendra Singh", "sbu": "CRL-GAD" },
+        { "slno": "13", "title": "Sensor Resolution Mismatch as a Geometric Bottleneck in ViT-Based Metric Depth Fine-Tuning", "id": "P0028", "author": "Ankita Kumari", "sbu": "CRL-GAD" },
+        { "slno": "14", "title": "Finite Element Modelling and Fastener Verification of a Missile Seeker Assembly as per MIL-STD-HDBK 5", "id": "P0030", "author": "Lokeswara Rao Morla", "sbu": "PDIC" },
+        { "slno": "15", "title": "AI-enabled Information Extraction from Army e-SITREPs for Battlefield Surveillance System-Comparative Evaluation of Named Entity Recognition Techniques", "id": "P0031", "author": "Shivani Singh", "sbu": "CRL-GAD" },
+        { "slno": "16", "title": "Improving Web Application Firewall Performance by using Parallel Rule Evaluation Architecture", "id": "P0033", "author": "Pilli Vamsikrishna", "sbu": "CRL-BG" },
+        { "slno": "17", "title": "AI Vision Based Passive Object Range Estimation and Speed Detection", "id": "P0034", "author": "Burra Dhanunjaya", "sbu": "MC" },
+        { "slno": "18", "title": "Mitigation of Buoyancy Induced Thermal Stagnation in Inverted Fin Type Heat Sinks", "id": "P0046", "author": "Prem Kumar", "sbu": "PDIC" },
+        { "slno": "19", "title": "Python verification of a coherent I/Q Optical Communication System with DSP alignment", "id": "P0049", "author": "Renu Varshney", "sbu": "COE-EL" },
+        { "slno": "20", "title": "Evaluating Adversarial Robustness of Deep Learning Models for Sinkhole Attack Detection in RPL-based IoT Networks", "id": "P0051", "author": "Prashant Kumar Gupta", "sbu": "CRL-GAD" },
+        { "slno": "21", "title": "Design and Implementation of Architecture for Image Dehazing", "id": "P0052", "author": "Ruhul Iman", "sbu": "CRL-BG" },
+        { "slno": "22", "title": "ZTADM-A Business Process-Driven Engineering Methodology for Zero Trust Architecture in Defence Manufacturing", "id": "P0053", "author": "Sunil Attri", "sbu": "PK" },
+        { "slno": "23", "title": "A Compact Manifold For Efficient Thermal Management of Multi-Liquid Cold Plate System", "id": "P0057", "author": "Hemanth V J", "sbu": "PDIC" },
+        { "slno": "24", "title": "Optimized Real-Time Data Distribution Architecture for Train Collision Avoidance System Network Monitoring", "id": "P0058", "author": "Sayahnneeta Dutta", "sbu": "CRL-GAD" },
+        { "slno": "25", "title": "Endpoint-Centric Advanced Network Detector for AI-Assisted Abnormal Protocol Behaviour", "id": "P0059", "author": "Nimesh Nikhil", "sbu": "CRL-GAD" },
+        { "slno": "26", "title": "Multi Physics Structural Analysis of Composite Radome Subjected to Wind & Vibration Loads", "id": "P0061", "author": "Chinraj N", "sbu": "PDIC" },
+        { "slno": "27", "title": "Realization of Low Noise Ku Band RF Front End Receiver for Radar Application.", "id": "P0063", "author": "Madhu Kumar N", "sbu": "PDIC" },
+        { "slno": "28", "title": "GPU Accelerated Phase Correlation for Real Time COMINT Direction Finding", "id": "P0065", "author": "Sai Deepthi Dwarampudi", "sbu": "HYD" },
+        { "slno": "29", "title": "Edge Intelligence for Orbital Cognitive Radar A Lean Layered Architecture", "id": "P0068", "author": "Nishkarsh Patel", "sbu": "CRL-GAD" },
+        { "slno": "30", "title": "Design of Wide band Front end Receiver for EW Applications", "id": "P0071", "author": "Paramanand Patil", "sbu": "PDIC" }
       ],
+
       "day1-session-2": [
-        { slno: "1", title: "Leak Path Prediction in a Bolted Connected Enclosure Using Contact Pressure Analysis and Experimental Validation", id: "P0381", author: "Kiran S K", sbu: "PDIC" },
-        { slno: "2", title: "A Hybrid Neural Network and PIM-Based Approach for Radar Pulse Deinterleaving", id: "P0382", author: "Dileep Kumar", sbu: "HYD" },
-        { slno: "3", title: "Multimodal AI for Body Fat Percentage Estimation Using Smartphone Images and Anthropometric Data", id: "P0384", author: "Yashwant Chauhan", sbu: "SOFTWARE" },
-        { slno: "4", title: "Design and Experimental Validation of a Constant-Length Dielectric-Loaded Waveguide Phase Shifter for S-Band Array Applications", id: "P0388", author: "Hemanth Kumar", sbu: "ANTENNA" },
-        { slno: "5", title: "An Autonomous Multi-Channel SOS-Based COMINT System with Automatic Modulation Classification and Intelligent Voice Recording", id: "P0392", author: "Aparna", sbu: "HYD" },
-        { slno: "6", title: "High-Power Validation of a Planar Ferrite Circulator for S-Band Radar Applications", id: "P0394", author: "Amit Kumar Gupta", sbu: "ANTENNA" },
-        { slno: "7", title: "Pattern Characterization of 2.4-GHz Carbon Fiber Based Antenna with Embedded De-icing and its Effects", id: "P0397", author: "Gaurav Kumar", sbu: "ANTENNA" },
-        { slno: "8", title: "A Session-Aware Confusion Framework for Intent-Flipped Detection in UCBR", id: "P0399", author: "Kamlesh Rajpoot", sbu: "CRL-GAD" },
-        { slno: "9", title: "A Hybrid Machine-Learning Framework for Phishing Email Detection Using a Large-scale Mixed Web-Corpus Dataset", id: "P0400", author: "Dharmendra Yadav", sbu: "CRL-GAD" },
-        { slno: "10", title: "CFD Simulation of an Optofluidic-based Chemical Detector (CFD) to optimize the design and reduce the wastage of droplet", id: "P0403", author: "Abhijat Udhamsin Naik", sbu: "PDIC" },
-        { slno: "11", title: "Design and Development of Flame Spectra Photometry-based Biological Threat Detection System", id: "P0413", author: "Akanksha Pratap Singh", sbu: "COM-M" },
-        { slno: "12", title: "A Modular Configurable Drone C2p Library for UDP Telemetry and Command Data Acquisition", id: "P0415", author: "Ayush Raj", sbu: "PDIC" },
-        { slno: "13", title: "Compound Deception Jamming Architecture for Electronic RF Memory-based Radar Jambook", id: "P0416", author: "Nikhilesh Chauhan", sbu: "CRL-BG" },
-        { slno: "14", title: "Compact Multi-Section Wilkinson Power Divider with High Isolation for EW Applications", id: "P0417", author: "Pavanan Joseph", sbu: "PDIC" },
-        { slno: "15", title: "Reducing subsea noise and multipath - A comparative analysis of Underwater Communication Systems using PSK & DSSS", id: "P0419", author: "Swetha P. M.", sbu: "PDIC" },
-        { slno: "16", title: "An Integrated Privacy-Aware Security Middleware for Preventing PI Leakage in Enterprise APIs", id: "P0422", author: "Akshita K S", sbu: "SOFTWARE" },
-        { slno: "17", title: "Comparative Thermal and Manufacturing Analysis of Conventional Rose-Fin vs. Additively Manufactured Lattice Heat Exchanger for Rugged Thermal Management", id: "P0425", author: "Ashish Tyagi", sbu: "PDIC" },
-        { slno: "18", title: "An Crypto-Chip as a Secure Memory-Mapped Baseband for Multi-Host Distributed Computing & Control in ESM Systems", id: "P0426", author: "Kamalavath Bhavya", sbu: "HYD" },
-        { slno: "19", title: "MMW Multi-sensor Automatic Vulnerability Intelligence System", id: "P0428", author: "Sunit Rakesh", sbu: "SOFTWARE" },
-        { slno: "20", title: "Operational Data Framework", id: "P0430", author: "Neeraj Kumar", sbu: "R&MCS" },
-        { slno: "21", title: "Compact Digital Receiver and Signal Processor for Radar Applications", id: "P0432", author: "Pushkin Halijate", sbu: "PDIC" },
-        { slno: "22", title: "NaviPy: A Cross-Platform Tactical Mobile Application with Mapbox GLJS for Defence Field Operations", id: "P0435", author: "Vaibhav Meteon", sbu: "CRL-GAD" },
-        { slno: "23", title: "Reliable Frequency Hopping Mixers Incorporating Vectorial Image Down-Converters", id: "P0439", author: "Santosh Bhaskar Rathnawali", sbu: "HYD" },
-        { slno: "24", title: "Dual-Stream Attention Fusion for Radar Emitter Classification from LLINT Data", id: "P0440", author: "Geetha Mohandas", sbu: "NCS" },
-        { slno: "25", title: "Multi-Modal Machine Learning Framework for Radar Cross Section Prediction and Target Classification", id: "P0438", author: "Rajkumar Megarvalli", sbu: "NCS" },
-        { slno: "26", title: "Quality Assurance Practices in Safety-Critical Software Documentation: A Case Study in the KAVACH Automatic Train Protection System", id: "P0441", author: "Hanish Singh", sbu: "CRL-GAD" },
-        { slno: "27", title: "Detailed Binding of multiple services using OSGi and microservice", id: "P0442", author: "Divyanshu Rampal", sbu: "CRL-BG" },
-        { slno: "28", title: "A Comprehensive CFD Analysis of a Supersonic Missile", id: "P0443", author: "Sunil Kumar N.", sbu: "PDIC" },
-        { slno: "29", title: "Performance Analysis of Balloon-Borne Sonar Using an Analytical Signal in Noise Ratio Metric", id: "P0449", author: "Naresh Reddy Konkamma", sbu: "HYD" },
-        { slno: "30", title: "An Optimized Framework for Radar Pulse Modulation Recognition in Complex Electromagnetic Noise Environment", id: "P0449", author: "ChanderVimla Karnika Renu", sbu: "COE-EL" }
+        { "slno": "1", "title": "Leak Path Prediction in a Bolted Gasketed Enclosure Using Contact Pressure Analysis and Experimental Validation", "id": "P0072", "author": "Kiran S K", "sbu": "PDIC" },
+        { "slno": "2", "title": "A Hybrid Neural Network and PRI-Based Approach for Radar Pulse De-interleaving", "id": "P0080", "author": "Dileep Kumar", "sbu": "HYD" },
+        { "slno": "3", "title": "Multimodal AI for Body Fat Percentage Estimation Using Smartphone Images and Anthropometric Data", "id": "P0081", "author": "Yashasvi Chauhan", "sbu": "SOFTWARE" },
+        { "slno": "4", "title": "Design and Experimental Validation of a Constant-Length Dielectric-Loaded Waveguide Phase Shifter for S-Band Array Applications", "id": "P0085", "author": "Neeresh Kumar", "sbu": "ANTENNA" },
+        { "slno": "5", "title": "An Autonomous Multi-Channel SDR-Based COMINT System with Automatic Modulation Classification and Intelligent Voice Recording", "id": "P0088", "author": "Aravind", "sbu": "HYD" },
+        { "slno": "6", "title": "High-Power Validation of a Four-Port Ferrite Circulator for S-Band Radar Application", "id": "P0092", "author": "Amit Kumar Gupta", "sbu": "ANTENNA" },
+        { "slno": "7", "title": "Pattern Characterization of 2.4-meter Carbon Fiber Based Antenna with Embedded De-icing and Its Effects", "id": "P0094", "author": "Gaurav Kumar", "sbu": "ANTENNA" },
+        { "slno": "8", "title": "A Session-Aware Correlation Framework for Insider Threat Detection in UEBA", "id": "P0097", "author": "Kamlesh Regar", "sbu": "CRL-GAD" },
+        { "slno": "9", "title": "A Hybrid Machine-Learning Framework for Phishing Email Detection Using a Large-Scale Merged Multi-Corpus Dataset", "id": "P0101", "author": "Dhirendra Yadav", "sbu": "CRL-GAD" },
+        { "slno": "10", "title": "CFD Simulation of Ion spectrography based chemical detector ICAD to optimise the design and reduce the leckage of dopant", "id": "P0104", "author": "Abhijeet Udhavrao Naik", "sbu": "PDIC" },
+        { "slno": "11", "title": "Design and Developement of Flame Spectro-Photometry based Biological Aerosol Detection System", "id": "P0106", "author": "Amarendra Pratap Singh", "sbu": "COE-EL" },
+        { "slno": "12", "title": "A Modular Configuration-Driven Cpp Library for UDP Telemetry and Concurrent Data Acquisition", "id": "P0111", "author": "Ayush Raj", "sbu": "PDIC" },
+        { "slno": "13", "title": "Compound Deception Jamming Architecture for Photonic RF Memory based Radar Jammers", "id": "P0113", "author": "Nikhilesh Chowdari", "sbu": "CRL-BG" },
+        { "slno": "14", "title": "Compact Multi Octave Wilkinson Power Divider with High Isolation for EW Applications", "id": "P0114", "author": "Paulson Joseph", "sbu": "PDIC" },
+        { "slno": "15", "title": "Resisting subsea noise and multipath - A comparative analysis of Underwater Communication System using PSK & DSSS", "id": "P0117", "author": "Swetha P M", "sbu": "PDIC" },
+        { "slno": "16", "title": "An Indigenous Privacy-Aware Security Microservice for Preventing PII Leakage in Enterprise APIs", "id": "P0119", "author": "Akhila K S", "sbu": "SOFTWARE" },
+        { "slno": "17", "title": "Comparative Thermal and Manufacturing Analysis of Conventional Plate-Fin vs. Additively Manufactured Lattice Heat Exchanger for Rugged Thermal Management", "id": "P0122", "author": "Aaftab Syed", "sbu": "PDIC" },
+        { "slno": "18", "title": "AXI Chip-to-Chip as a Scalable Memory-Mapped Backbone for Multi-FPGA Distributed Computing & Control in ESM Systems", "id": "P0123", "author": "Komaravalli Bhavya", "sbu": "HYD" },
+        { "slno": "19", "title": "MAVIS Multi Scanner Automated Vulnerability Intelligence System", "id": "P0126", "author": "Somashekard", "sbu": "SOFTWARE" },
+        { "slno": "20", "title": "Operational Data Framework", "id": "P0129", "author": "Suraj Kumar", "sbu": "NWCS" },
+        { "slno": "21", "title": "Compact Digital Receiver and Signal Processor for Radar Applications", "id": "P0130", "author": "Pratiksha Halijwale", "sbu": "PDIC" },
+        { "slno": "22", "title": "NavSync A Cross Platform Tactical Mobile Application with WebView Driven GIS for Defense Field Operations", "id": "P0133", "author": "Vaibhav Mahajan", "sbu": "CRL-GAD" },
+        { "slno": "23", "title": "Scalable Frequency Hopping Monitoring using Multichannel Digital Down-Converters", "id": "P0135", "author": "Jami Sai Bhaskara Brahmesh", "sbu": "HYD" },
+        { "slno": "24", "title": "Dual-Stream Attention Fusion for Radar Emitter Classification from ELINT Data", "id": "P0137", "author": "Shivani Medhekar", "sbu": "NCS" },
+        { "slno": "25", "title": "Multi-Model Machine Learning Framework for Radar Cross Section Prediction and Target Classification", "id": "P0138", "author": "Rajkumar Meghwal", "sbu": "NCS" },
+        { "slno": "26", "title": "Quality Assurance Practices in Safety Critical Software Documentation A Case Study on the KAVACH Automatic Train Protection System", "id": "P0139", "author": "Harshit Singh", "sbu": "CRL-GAD" },
+        { "slno": "27", "title": "Direction finding of multiple emitters using 1D CNN and co-relative Interferometry", "id": "P0141", "author": "Dibyakanti Mahapatra", "sbu": "CRL-BG" },
+        { "slno": "28", "title": "A Comprehensive CFD Analysis of a Supersonic Missile", "id": "P0142", "author": "Sunil Kumar V", "sbu": "PDIC" },
+        { "slno": "29", "title": "Performance Analysis of Bottom Bounce Sonar using an Analytical Signal to Noise Ratio Model", "id": "P0145", "author": "Nakki Reddy Kondamma", "sbu": "NS1" },
+        { "slno": "30", "title": "An Optimized Framework for Robust Radar PRI Modulation Recognition in Complex Electromagnetic Noise Environment", "id": "P0146", "author": "Chalamcharla Karthik Babu", "sbu": "COE-EL" }
       ],
+
       "day2-session-1": [
-        { slno: "1", title: "Efficient Method for FMCW Radar Ambiguity Resolution Using Sliding Window Technique for FPGA Based Signal Processor", id: "P0447", author: "Mohinder Singh", sbu: "PDIC" },
-        { slno: "2", title: "Numerical Analysis of Heat Pipe Based Cooling for High Brightness LED and SMD Based Optical Engines", id: "P0456", author: "Vatsalya Kar Kaushik", sbu: "PDIC" },
-        { slno: "3", title: "Design and Analysis of a 3x3 Grid Vivaldi Antenna for Short Range Radar Application", id: "P0467", author: "Avinash Karmakar", sbu: "CRL-BG" },
-        { slno: "4", title: "System-Optimal Route Recommendation under Partial User Compliance and Dynamic Traffic Conditions", id: "P0480", author: "Sumeet Chaurasiya", sbu: "CRL-BG" },
-        { slno: "5", title: "Middleware Selection for Distributed Radar Systems: A Comparative Evaluation of DDS, ZeroMQ, and Custom Protocols", id: "P0482", author: "Aayush", sbu: "CRL-GAD" },
-        { slno: "6", title: "Beyond Accuracy: A Comprehensive Survey and Framework for Uncertainty-Aware Evaluation of Large Language Models to Mitigate Hallucination", id: "P0488", author: "Prati Parvez", sbu: "CRL-BG" },
-        { slno: "7", title: "Real-Time Framework for Data Visualization of Passive Radar Receiver", id: "P0489", author: "E. Bharat Kumar", sbu: "CRL-BG" },
-        { slno: "8", title: "Design and Development of an 80 mm High Explosive Prefragmented Warhead", id: "P0497", author: "Daweshkumar N.", sbu: "AA" },
-        { slno: "9", title: "Clock Compensation in Array Group Receiver", id: "P0499", author: "Yashwanth Shukla", sbu: "ANTENNA" },
-        { slno: "10", title: "Closing the Loop in Explainable AI: Quantitative Evaluation and Targeted Model Improvement for Military Aircraft Classification", id: "P0475", author: "Amit Nagapuri", sbu: "CRL-BG" },
-        { slno: "11", title: "Replacing Strategic Moderation in Defense Procurement Using Agents AI", id: "P0477", author: "Subhashis Mandal", sbu: "CRL-BG" },
-        { slno: "12", title: "Development of EN45545-2/R10HL3 Compliant Floor Board Panel for Railway Coaches", id: "P0479", author: "Nitesh Rajendra Bhaskar", sbu: "M&MC" },
-        { slno: "13", title: "Development of an Automatic Message Switching System Simulator for Pre-deployment Validation of Flight Plan Data Processing Systems", id: "P0487", author: "Brajesh Nagpal", sbu: "RADAR" },
-        { slno: "14", title: "Machine learning-based surrogate model for rapid thermal characterization", id: "P0488", author: "Uppoleti Charan Deep", sbu: "PDIC" },
-        { slno: "15", title: "Time Interleaved 10 GS/s Photonic Analog to Digital Converter for Direct Digitization of Wideband RF Signals", id: "P0494", author: "Naresh Bathula", sbu: "CRL-BG" },
-        { slno: "16", title: "Cyber Security Architecture for An Enabled Software Defined Vehicles", id: "P0495", author: "Satyanand Gupta", sbu: "CRL-BG" },
-        { slno: "17", title: "On-board transponderisation for EO payloads", id: "P0497", author: "Kashminatu Roy", sbu: "PDIC" },
-        { slno: "18", title: "Integrated Design Methodology and Engineering Fundamentals of Direction Finder Systems", id: "P0498", author: "Yugandhara Siva Rama Krishna", sbu: "MC" },
-        { slno: "19", title: "FPGA Based Real Time Architecture for Synchronized High Bandwidth Data Aggregation Over Multi-10G Interfaces for Digital Beamforming Systems", id: "P0500", author: "M.M.L Nandan Varma", sbu: "RADAR" },
-        { slno: "20", title: "Adaptive Labeled-Constrained GM-PHD Filtering for Robust Multi-Target Tracking in Cluttered Environments", id: "P0506", author: "Karunashree Mallath", sbu: "CRL-BG" },
-        { slno: "21", title: "Design & Structural Integrity Analysis of a Modular Bench Level Testing Fixture for Electronic Modules", id: "P0509", author: "Bangari Prudhviraj", sbu: "ANTENNA" },
-        { slno: "22", title: "Analysis of LLR compensation for HP modems as per MIL-STD-188-110B", id: "P0510", author: "B.V S Anil Kumar", sbu: "CRL-BG" },
-        { slno: "23", title: "Detection of Landslide using Hyperspectral Imaging", id: "P0511", author: "Arka Pramanick", sbu: "COE-EL" },
-        { slno: "24", title: "Verification of Thermal Dissipation Performance of liquid-cooled cold plates using ANSYS Fluent", id: "P0512", author: "Bangari Prudhviraj", sbu: "ANTENNA" },
-        { slno: "25", title: "Hybrid Deep Learning Framework for RF-Based Drone Detection Using Frequency Hopping and CP-OFDM Feature Fusion", id: "P0515", author: "Dhananjay K. D.M.", sbu: "HYD" },
-        { slno: "26", title: "An AI-Driven Tactical Intelligence Framework for Large-Scale Satellite Communication Analysis Using Elasticsearch and Geospatial Analytics", id: "P0524", author: "S. Venkatesh", sbu: "HYD" },
-        { slno: "27", title: "A-Hazard Cognitive Electronic Attack Configuration using Complex Valued Deep Learning and Transformer Networks", id: "P0527", author: "Sada Vriksha", sbu: "HYD" },
-        { slno: "28", title: "An AI-Based Approach for EW Planning and Automated Sensor Deployment Using GIS", id: "P0530", author: "Rajesh Manuka", sbu: "HYD" },
-        { slno: "29", title: "SURC: A Context-Independent Adaptive Mass-Compensation Framework for Rotation Control in Heterogeneous Mobile Robots", id: "P0531", author: "Karan Vachhani", sbu: "CRL-GAD" },
-        { slno: "30", title: "Selective Confidence-Gated Machine Learning for a Rule-Based Radar ESM Deinterleaver", id: "P0533", author: "Gupanavena Jeeshitha Kurapavalli", sbu: "HYD" }
+        { "slno": "1", "title": "Efficient Method for MPRF Radar Ambiguity Resolution Using Sliding-Window Technique for FPGA based Signal Processor", "id": "P0147", "author": "Malwinder Singh", "sbu": "PDIC" },
+        { "slno": "2", "title": "Numerical Analysis of Heat Pipe Based Cooling for High Brightness LED and DMD Based Optical Engines", "id": "P0156", "author": "Valaboju Sai Karthik", "sbu": "PDIC" },
+        { "slno": "3", "title": "Design and Analysis of a 24 GHz Vivaldi Antenna for Short Range Radar Application", "id": "P0157", "author": "Arnab Karmakar", "sbu": "CRL-BG" },
+        { "slno": "4", "title": "System-Optimal Route Recommendation under Partial User Compliance and Dynamic Traffic Conditions", "id": "P0160", "author": "Subedar Chaurasiya", "sbu": "CRL-BG" },
+        { "slno": "5", "title": "Middleware Selection for Distributed Radar Sytems A Comparative Evaluation of DDS, ZeroMQ, and Custom Protocols", "id": "P0162", "author": "Aayush", "sbu": "CRL-GAD" },
+        { "slno": "6", "title": "Beyond Accuracy- A Comprehensive Survey and Framework for Uncertainty-Aware Evaluation of Large Language Models to Mitigate Hallucination", "id": "P0163", "author": "Pratik Parmar", "sbu": "CRL-BG" },
+        { "slno": "7", "title": "Real-Time Framework for Data Visualization of Passive Radar Receiver.", "id": "P0164", "author": "K Bharat Kumar", "sbu": "CRL-BG" },
+        { "slno": "8", "title": "Design and Development of an 80 mm High Explosive Prefragmentation Warhead", "id": "P0167", "author": "Dineshkumar S", "sbu": "AA" },
+        { "slno": "9", "title": "Clock Compensation in Array Group Receiver", "id": "P0171", "author": "Yasharth Shukla", "sbu": "ANTENNA" },
+        { "slno": "10", "title": "Closing the Loop in Explainable AI Quantitative Evaluation and Targeted Model Improvement for Military Aircraft Classification", "id": "P0172", "author": "Amit Nagarkoti", "sbu": "CRL-BG" },
+        { "slno": "11", "title": "Explaining Strategic Motivations in Defense Procurement Using Agentic AI", "id": "P0177", "author": "Subhasis Mandal", "sbu": "CRL-BG" },
+        { "slno": "12", "title": "Development of EN45545-2/R10/HL3 Complied Floor Board Panel for Railway Coaches", "id": "P0179", "author": "Nilesh Rajendra Bhavsar", "sbu": "NAMU" },
+        { "slno": "13", "title": "Development of an Automatic Message Switching System Simulator for Pre-deployment Validation of Flight Plan Data Processing Systems", "id": "P0187", "author": "Bhawna Nagpal", "sbu": "RADAR" },
+        { "slno": "14", "title": "Machine learning based surrogate model for rapid thermal characterization", "id": "P0191", "author": "Uppalapati Charan Deep", "sbu": "PDIC" },
+        { "slno": "15", "title": "Time-Interleaved 5GS/s Photonic Analogue to Digital Converter for Direct Digitization of Wideband RF Signals", "id": "P0194", "author": "Naresh Sothuku", "sbu": "CRL-BG" },
+        { "slno": "16", "title": "Cyber Security Architecture for AI Enabled Software Defined Vehicles", "id": "P0195", "author": "Satyanand Gupta", "sbu": "CRL-BG" },
+        { "slno": "17", "title": "On board harmonization module for EO payloads", "id": "P0197", "author": "Krishnendu Roy", "sbu": "PDIC" },
+        { "slno": "18", "title": "Integrated Design Methodology and Engineering Fundamentals of Precision Gimbal Systems", "id": "P0199", "author": "Yugandhara Siva Rama Krishna", "sbu": "MC" },
+        { "slno": "19", "title": "FPGA-Based Real-Time Architecture for Synchronized, High-Bandwidth Data Aggregation Over Multi-10G Interfaces for Digital Beamforming Systems", "id": "P0204", "author": "Nikhil Nandan Verma", "sbu": "RADAR" },
+        { "slno": "20", "title": "Adaptive Label-Constrained GM-PHD Filtering for Robust Multi-Target Tracking in Cluttered Environments", "id": "P0206", "author": "Kunjakishore Mohalik", "sbu": "CRL-BG" },
+        { "slno": "21", "title": "Design & Structural Integrity Analysis of a Modular Bench Level Testing Fixture for Electronic Modules", "id": "P0208", "author": "Bangari Prudhviraj", "sbu": "ANTENNA" },
+        { "slno": "22", "title": "Analysis of LLR computation for HF modems as per MIL-STD-188-110B", "id": "P0210", "author": "B V S Anil Kumar", "sbu": "CRL-BG" },
+        { "slno": "23", "title": "Detection of Landmine using Hyperspectral Imaging", "id": "P0211", "author": "Arka Pramanik", "sbu": "COE-EL" },
+        { "slno": "24", "title": "Verification of Thermal Dissipation Performance of liquid-cooled cold plates using ANSYS Fluent", "id": "P0212", "author": "Bangari Prudhviraj", "sbu": "ANTENNA" },
+        { "slno": "25", "title": "Hybrid Deep Learning Framework for RF-Based Drone Detection Using Frequency Hopping and OFDM Feature Fusion", "id": "P0213", "author": "Dhanunjaya D M", "sbu": "HYD" },
+        { "slno": "26", "title": "An AI-Driven Terminal Intelligence Framework for Large-Scale Satellite Communication Analysis Using Elasticsearch and Geospatial Analytics", "id": "P0214", "author": "S Venkatesh", "sbu": "HYD" },
+        { "slno": "27", "title": "AI-Based Cognitive Electronic Attack Configuration Using Complex-Valued Deep Learning and Transformer Networks", "id": "P0215", "author": "Sada Vriksha", "sbu": "HYD" },
+        { "slno": "28", "title": "An AI-Based Approach for EW Planning and Automated Sensor Deployment Using GIS", "id": "P0216", "author": "Sanket Mondal", "sbu": "HYD" },
+        { "slno": "29", "title": "SLRC A Controller-Independent Adaptive Bias-Compensation Framework for Rotation Control in Heterogeneous Mobile Robots", "id": "P0219", "author": "Ram Vaishnav", "sbu": "CRL-GAD" },
+        { "slno": "30", "title": "Selective, Confidence-Gated Machine Learning for a Rule-Based Radar ESM Deinterleaver", "id": "P0222", "author": "Elasarapu Jeeshita Kalpavalli", "sbu": "HYD" }
       ],
+
       "day2-session-2": [
-        { slno: "1", title: "Chain of Trust: A Hierarchical Blockchain Architecture for Project Lifecycle Traceability and Encumbrance Verification in Land Registration Systems", id: "P0534", author: "Abhishek Kumar Shukla", sbu: "SOFTWARE" },
-        { slno: "2", title: "Quantum Support Vector Machine on NISQ Hardware", id: "P0535", author: "AGG Harshaverthan", sbu: "CRL-BG" },
-        { slno: "3", title: "Precision Phase Center Investigation of Active Radar Antenna Array Inside NFTR Chamber", id: "P0538", author: "Om Prakash", sbu: "COE-CRW" },
-        { slno: "4", title: "Improved DFT Techniques for Low-Power and High-Efficiency Testing of Advanc Technology Node", id: "P0540", author: "Raman G.", sbu: "PDIC" },
-        { slno: "5", title: "Drone Assisted Azimuth and Elevation Bias Correction for H/FM Antenna", id: "P0542", author: "Sunit Prasad Jaiswal", sbu: "MS" },
-        { slno: "6", title: "A Time-Contoured Trajectory Optimization Framework for UAV-Based Radar 3D Mapping", id: "P0545", author: "Tapasilu Das", sbu: "CRL-BG" },
-        { slno: "7", title: "A Scalable Architecture for Coherent Aggregation of Interleaved Beamforming Data over Ethernet", id: "P0546", author: "Kommal Harinatha", sbu: "COE-CRW" },
-        { slno: "8", title: "SPI-ANT: A Closed-Loop Active Prescription Architecture for PTZ-Based UAV Detection and Tracking", id: "P0548", author: "Kamran Jai Rath", sbu: "HYD" },
-        { slno: "9", title: "A Systematic Approach for Characterization of RF Signal Chain in EW System Design", id: "P0552", author: "Abhijit Roy, Devdeep A.", sbu: "N/A" },
-        { slno: "10", title: "Performance comparison of open source LLMs and Runtime Analysis of rugged CPU and GPU systems", id: "P0560", author: "Angallu Murali Krishna", sbu: "PDIC" },
-        { slno: "11", title: "STERN: A Parallel LoRa-Based Tactical Emergency Reporting Framework for Military Vehicle Networks", id: "P0562", author: "Deepak Gupa", sbu: "PK" },
-        { slno: "12", title: "Enhanced Transformer-Based Deep Metric Learning for Radar Pulse Deinterleaving Using Non-linear Feature Embedding and Multi-Objective Metric Optimization", id: "P0570", author: "Srividya L.", sbu: "MIL2" },
-        { slno: "13", title: "NetCX: A Modular Software Architecture for Real-Time Radar Controller Development", id: "P0572", author: "Ravi Kumar R.", sbu: "SOFTWARE" },
-        { slno: "14", title: "Specio to Large: A Unified Hyper-Net for Multi-Tire Drone Classification", id: "P0578", author: "RASHMI K.", sbu: "CRL-BG" },
-        { slno: "15", title: "Adaptive Dual-Length FFT Processing for Radar Derivative Waveform Extraction in High-Density EW Receivers", id: "P0579", author: "Shobha Prasad Vachana", sbu: "HYD" },
-        { slno: "16", title: "Development of 3kW Demarcated Raman Linewidth Fiber Laser for Spectral Beam Combining", id: "P0588", author: "Debasish Manna", sbu: "COE-EL" },
-        { slno: "17", title: "Deep-Vision-COARL: An Adaptive AI Framework for Multi-Sensor Counter-UAV Surveillance", id: "P0593", author: "Vivek Kumar", sbu: "CRL-GAD" },
-        { slno: "18", title: "Resilient Connectivity for Unmanned Systems in Contested Electronic Warfare Environments", id: "P0594", author: "Sanjeev Kumar", sbu: "CO" },
-        { slno: "19", title: "Implementation of a Unified Waveform Data Framework for Wideband UHF Software Defined Radio", id: "P0598", author: "R Mohammad Bilal", sbu: "CRL-BG" },
-        { slno: "20", title: "Practical Study in Carbon Fiber Composite Part Rapid Prototyping", id: "P0607", author: "Aditya R N", sbu: "CRL-BG" },
-        { slno: "21", title: "Analysis of Collision Interception Techniques in Electronic Warfare: A Software-Assisted Platform Study with a Proposed Layered Defense Solution", id: "P0612", author: "Kiran Kumar Makkala", sbu: "HYD" },
-        { slno: "22", title: "Comprehensive Analysis of Joint CFR and DPD Techniques for Long Range Multi-Carrier Normalised Wireless Systems", id: "P0614", author: "R V B L Sharma", sbu: "CRL-BG" },
-        { slno: "23", title: "A Hybrid Cloud Architecture for Secure Workload Bursting in Defence Series / Sensor Co-Zone-Based Classification and Dynamic Scaling", id: "P0616", author: "Nith Kumar", sbu: "CRL-BG" },
-        { slno: "24", title: "Engineering Situational Awareness through Nationally Developed Geospacial Framework", id: "P0624", author: "Madhuresh Kumar Sharma", sbu: "SOFTWARE" },
-        { slno: "25", title: "Novel Design of a Compact FPGA-Based Controller Card for a Tile Radar", id: "P0626", author: "Gulla Sandhya", sbu: "MS" },
-        { slno: "26", title: "A Nucleus Adaptive Confidence Function Based Recursive Interference Cancellation Framework for FPGA-Oriented Radar Optimal Detection in 2-0(QPSK-MFSK) Systems", id: "P0627", author: "Biyamash Wilson", sbu: "CRL-BG" },
-        { slno: "27", title: "Design Optimization and Validation of a Lightweight Back-up Support Structure for 1.2m Ku-Band VSAT Antenna", id: "P0632", author: "Arpit Garg", sbu: "ANTENNA" },
-        { slno: "28", title: "DPE-Derived Navigation for Thrust Unmanned Aerial Vehicle", id: "P0636", author: "Hardik Baksi", sbu: "EO/IRPNC" },
-        { slno: "29", title: "Evaluating PBN-Correction Against EMP, UHF and VHF in Non-Gaussian Noise Correlator", id: "P0647", author: "Archana Sinha", sbu: "CRL-GAD" },
-        { slno: "30", title: "Tamper Triggered Denial Architecture for Secure LEO Defense Satellite", id: "P0648", author: "Tarun Gadi", sbu: "SCCS" }
+        { "slno": "1", "title": "Chain of Title - A Hierarchical Blockchain Architecture for Parcel Lineage Traceability and Encumbrance Verification in Land Registration Systems", "id": "P0224", "author": "Ashutosh Kumar Shukla", "sbu": "SOFTWARE" },
+        { "slno": "2", "title": "Quantum Support Vector Machine on NISQ Hardware", "id": "P0225", "author": "NGS Harshavardhan", "sbu": "CRL-BG" },
+        { "slno": "3", "title": "Precise Probe Phase Center Investigation of Active Radar Antenna Array inside NFTR chamber", "id": "P0235", "author": "Om Prakash", "sbu": "COE-CRW" },
+        { "slno": "4", "title": "Improved DFT Techniques for Low-Power and High-Efficiency Testing at 40 nm Technology Node", "id": "P0241", "author": "Raman B", "sbu": "PDIC" },
+        { "slno": "5", "title": "Drone Assisted Azimuth and Elevation Bias Correction for HPM Antenna", "id": "P0244", "author": "Sumit Prasad Jaiswal", "sbu": "MS" },
+        { "slno": "6", "title": "A Time-Constrained Trajectory Optimization Framework for UAV-Based Radar 3D Mapping", "id": "P0245", "author": "Jayanta Das", "sbu": "CRL-BG" },
+        { "slno": "7", "title": "A Scalable Architecture for Coherent Aggregation of Distributed Beamforming Data over Ethernet", "id": "P0246", "author": "Komma Harshitha", "sbu": "COE-CRW" },
+        { "slno": "8", "title": "DFI-ANT A Closed-Loop Active Perception Architecture for PTZ-Based UAV Detection and Tracking", "id": "P0248", "author": "Vandan Jai Rahi", "sbu": "HLS" },
+        { "slno": "9", "title": "A Systematic Approach for Characterization of RF Signal Chain in EW System Design", "id": "P0252", "author": "Abhijit Roy", "sbu": "EW&A" },
+        { "slno": "10", "title": "Performance comparison of open source LLMs and Roofline Analysis of rugged CPU and GPU systems", "id": "P0261", "author": "Amgothu Murali Krishna", "sbu": "PDIC" },
+        { "slno": "11", "title": "STERRS A Parallel LoRa-Based Tactical Emergency Reporting Framework for Military Vehicle Networks", "id": "P0263", "author": "Deepak Bajaj", "sbu": "PK" },
+        { "slno": "12", "title": "Enhanced Transformer-Based Deep Metric Learning for Radar Pulse De-interleaving Using Nonlinear Feature Embedding and Multi-Objective Metric Optimization", "id": "P0270", "author": "Sharath L", "sbu": "NS2" },
+        { "slno": "13", "title": "RadX- A Modular Software Architecture for Real-Time Radar Controller Development", "id": "P0271", "author": "Ravi Kumar R", "sbu": "SOFTWARE" },
+        { "slno": "14", "title": "Nano to Large, A Unified Pipeline for Multi-Tier Drone Classification", "id": "P0278", "author": "Bhaviteja", "sbu": "CRL-BG" },
+        { "slno": "15", "title": "Adaptive Dual-Length FFT Processing for Pulse Descriptor Word Extraction in High-Density EW Receivers", "id": "P0286", "author": "Shakti Prasad Moharana", "sbu": "HYD" },
+        { "slno": "16", "title": "Development of 3kW Depolarized Narrow Linewidth Fiber Laser for Spectral Beam Combining", "id": "P0289", "author": "Debasish Mishra", "sbu": "COE-EL" },
+        { "slno": "17", "title": "DeepFusion-CUAS- An Adaptive AI Framework for Multi-Sensor Counter-UAS Surveillance", "id": "P0293", "author": "Vinod Kumar", "sbu": "CRL-GAD" },
+        { "slno": "18", "title": "Resilient Connectivity for Unmanned Systems in Contested Electronic Warfare Environments", "id": "P0294", "author": "Sanjeev Kumar", "sbu": "CO" },
+        { "slno": "19", "title": "Implementation of a Unified Voice and Data Framework for Wideband HF Software Defined Radio", "id": "P0306", "author": "R Mohammed Bilal", "sbu": "CRL-BG" },
+        { "slno": "20", "title": "Practical Study in Carbon Fiber Composite Part Rapid Prototyping", "id": "P0307", "author": "Aditya K N", "sbu": "CRL-BG" },
+        { "slno": "21", "title": "Analysis of Cellular Interception Techniques in Electronic Warfare A Software-Assisted Platform Study with a Proposed Layered Defence Solution", "id": "P0311", "author": "Kiran Kumar Buddala", "sbu": "HYD" },
+        { "slno": "22", "title": "Comprehensive Analysis of Joint CFR and DPDTechniques for Long Range Multi Carrier Narrowband Wireless Systems", "id": "P0314", "author": "R V B L Kiranmai", "sbu": "CRL-BG" },
+        { "slno": "23", "title": "A Hybrid Cloud Architecture for Secure Workload Bursting in Defense Sensor Networks-Zone-Based Classification and Dynamic Scaling", "id": "P0319", "author": "Nitin Kumar", "sbu": "CRL-BG" },
+        { "slno": "24", "title": "Enhancing Situational Awareness through Nationally Developed Geospatial Framework", "id": "P0329", "author": "Madhuwesh Kumar Sharma", "sbu": "SOFTWARE" },
+        { "slno": "25", "title": "Novel Design of a Compact FPGA Based Controller Card for a Tile Radar", "id": "P0330", "author": "Golle Sandhya", "sbu": "MS" },
+        { "slno": "26", "title": "A Nonlinear Adaptive Confidence Function Based Recursive Successive Interference Cancellation Framework for FPGA Oriented Near Optimal Detection in 2 cross 2 QPSK MIMO Systems.", "id": "P0338", "author": "Sreyoshi Ghosh", "sbu": "CRL-BG" },
+        { "slno": "27", "title": "Design Optimization and Validation of a Lightweight Back up Support Structure for 1.2m Ku-Band VSAT Antenna", "id": "P0341", "author": "Arpit Garg", "sbu": "ANTENNA" },
+        { "slno": "28", "title": "GPS Denied Navigation for Small Unmanned Aerial Vehicle", "id": "P0345", "author": "Akash Sahu", "sbu": "SC&US" },
+        { "slno": "29", "title": "Evaluating Downstream PIML Correction Against EKF, UKF and AKF in Non-Gaussian State Estimation", "id": "P0347", "author": "Archideb Sinha", "sbu": "CRL-BG" },
+        { "slno": "30", "title": "Tamper-Triggered Denial Architecture for Secure LEO Defense Satellites", "id": "P0348", "author": "Tarush Goel", "sbu": "SCCS" }
       ]
+
     };
 
     // Render Function for 2-Column Poster Sessions
@@ -334,8 +339,8 @@
 
       tbody.innerHTML = items.map(paper => `
         <tr class="hover:bg-slate-50 transition">
-          <td class="py-3 px-4 text-center font-bold text-slate-700 border-r border-slate-100">${paper.slno}</td>
-          <td class="py-3 px-4 space-y-1">
+          <td class="py-2 px-2 text-center font-bold text-slate-700 border-r border-slate-100">${paper.slno}</td>
+          <td class="py-2 px-2 space-y-1">
             <div class="font-semibold text-slate-900 mt-1 text-sm sm:text-base leading-snug">${paper.title}</div>
             <div class="flex items-center justify-between mt-3 text-xs text-slate-500 pt-2 border-t border-slate-100">
               <span>👤 ${paper.author} <small class="text-slate-400">(${paper.id})</small></span>
