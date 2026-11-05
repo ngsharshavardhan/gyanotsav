@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/static/img/bel_logo.png">
+  <title>CRL Technical Symposium - Gyanotsav 2026</title>
+  <script src="/static/js/tailwind.js"></script>
+  <link rel="stylesheet" href="/static/css/inter.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              800: '#0a192f',
+              900: '#06101e',
+              950: '#030811',
+            },
+            tech: {
+              blue: '#0d6efd',
+              cyan: '#00d2ff',
+              slate: '#475569',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Smooth transitions and scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body
+  class="font-sans bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur border-b border-slate-800 text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/">
+        <div class="flex items-center space-x-3">
+          <!-- <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center font-bold text-lg text-white shadow-lg">
+            CRL
+          </div> -->
+          <img class="w-9 h-9 flex items-center justify-centershadow-lg" src="static/img/bel_logo.png" alt="BEL Logo">
+          <div>
+            <span class="font-bold tracking-tight text-white block text-sm sm:text-base leading-tight">
+              Gyanotsav - 2026
+            </span>
+            <span class="text-xs text-cyan-400 block font-medium">CRL Technical Symposium</span>
+          </div>
+        </div>
+      </a>
+      <nav class="md:flex items-center space-x-6 text-sm font-medium">
+        <a href="/"
+          class="px-3.5 py-1.5 rounded-md bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow transition">
+          Home
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="relative bg-navy-900 text-white py-8 md:pt-20 md:pb-24 px-4 overflow-hidden border-b border-slate-800">
+    <!-- Subtle Background Grid/Glow Accent -->
+    <div
+      class="absolute inset-0 opacity-10 bg-[radial-gradient(#00d2ff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none">
+    </div>
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto text-center relative z-10 space-y-6">
+
+      <!-- Date Badge -->
+      <div
+        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-cyan-300 text-xs sm:text-sm font-medium shadow-sm">
+        <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+        Nov 11 - Nov 12, 2026
+      </div>
+
+      <!-- Main Titles -->
+      <div class="space-y-2">
+        <h2 class="text-xs sm:text-sm font-bold uppercase tracking-widest text-slate-400">CRL Technical Symposium</h2>
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+          Gyanotsav - 2026
+        </h1>
+      </div>
+
+      <!-- Theme & Tagline -->
+      <div class="max-w-2xl mx-auto py-2">
+        <p class="text-base sm:text-xl font-medium text-slate-200 leading-relaxed">
+          Technologies for Next Generation Defense Electronics Systems
+        </p>
+      </div>
+
+      <!-- Venue Info -->
+      <div class="flex items-center justify-center gap-2 text-xs sm:text-sm text-slate-300">
+        <svg class="w-4 h-4 text-red-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z">
+          </path>
+        </svg>
+        <span>Nalanda, BAE, BEL, Bangalore</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main id="schedules" class="flex-1 max-w-5xl w-full mx-auto px-4 py-10 space-y-16">
+
+    <!-- Quick Navigation Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="paper-schedule.html"
+        class="glass-card rounded-xl p-6 border border-slate-200 hover:border-blue-400 hover:shadow-xl transition cursor-pointer group flex flex-col justify-between">
+        <div class="space-y-3">
+          <div class="inline-flex gap-2 items-center">
+            <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold">
+              01
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition">
+              Paper Presentation Sessions
+            </h3>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Spanning 16 specialized technical tracks, the event features comprehensive sessions distributed across
+            halls:
+          </p>
+          <ul class="text-sm text-slate-600 leading-relaxed m-0 p-0 ml-6">
+            <li>Hall A: Dr. APJ Abdul Kalam Hall</li>
+            <li>Hall B: Sir C. V. Raman Hall</li>
+            <li>Hall C: Prof. Satish Dhawan Hall</li>
+            <li>Hall D: Sir M Visvesvaraya Auditorium</li>
+          </ul>
+        </div>
+        <div class="mt-3 flex items-center text-sm font-semibold text-blue-600 group-hover:translate-x-1 transition">
+          View Schedule &rarr;
+        </div>
+      </a>
+
+      <a href="poster-schedule.html"
+        class="glass-card rounded-xl p-6 border border-slate-200 hover:border-slate-400 hover:shadow-xl transition cursor-pointer group flex flex-col justify-between">
+        <div class="space-y-3">
+          <div class="inline-flex gap-2 items-center">
+            <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center font-bold">
+              02
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 group-hover:text-slate-700 transition">
+              Poster Presentation Sessions
+            </h3>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            120 technical poster presentations spread across 4 dedicated sessions over 2 days
+          </p>
+        </div>
+        <div class="mt-3 flex items-center text-sm font-semibold text-slate-700 group-hover:translate-x-1 transition">
+          View Schedule &rarr;
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-slate-400 py-8 border-t border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 text-center space-y-3 text-xs sm:text-sm">
+      <p class="font-semibold text-slate-300">CRL Technical Symposium — Gyanotsav 2026</p>
+      <p>Technologies for Next Generation Defense Electronics Systems</p>
+      <p class="text-slate-500">Nalanda, BAE, BEL, Bangalore &bull; Nov 11 - Nov 12, 2026</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

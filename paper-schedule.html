@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/static/img/bel_logo.png">
+  <title>CRL Technical Symposium - Gyanotsav 2026</title>
+  <script src="/static/js/tailwind.js"></script>
+  <link rel="stylesheet" href="/static/css/inter.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              800: '#0a192f',
+              900: '#06101e',
+              950: '#030811',
+            },
+            tech: {
+              blue: '#0d6efd',
+              cyan: '#00d2ff',
+              slate: '#475569',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Smooth transitions and scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body
+  class="font-sans bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur border-b border-slate-800 text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/">
+        <div class="flex items-center space-x-3">
+          <!-- <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center font-bold text-lg text-white shadow-lg">
+            CRL
+          </div> -->
+          <img class="w-9 h-9 flex items-center justify-centershadow-lg" src="static/img/bel_logo.png" alt="BEL Logo">
+          <div>
+            <span class="font-bold tracking-tight text-white block text-sm sm:text-base leading-tight">
+              Gyanotsav - 2026
+            </span>
+            <span class="text-xs text-cyan-400 block font-medium">CRL Technical Symposium</span>
+          </div>
+        </div>
+      </a>
+      <nav class="md:flex items-center space-x-6 text-sm font-medium">
+        <a href="/"
+          class="px-3.5 py-1.5 rounded-md bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow transition">
+          Home
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="relative bg-navy-900 text-white py-8 md:pt-20 md:pb-24 px-4 overflow-hidden border-b border-slate-800">
+    <!-- Subtle Background Grid/Glow Accent -->
+    <div
+      class="absolute inset-0 opacity-10 bg-[radial-gradient(#00d2ff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none">
+    </div>
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto text-center relative z-10 space-y-6">
+
+      <!-- Date Badge -->
+      <div
+        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-cyan-300 text-xs sm:text-sm font-medium shadow-sm">
+        <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+        Nov 11 - Nov 12, 2026
+      </div>
+
+      <!-- Main Titles -->
+      <div class="space-y-2">
+        <h2 class="text-xs sm:text-sm font-bold uppercase tracking-widest text-slate-400">CRL Technical Symposium</h2>
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+          Gyanotsav - 2026
+        </h1>
+      </div>
+
+      <!-- Theme & Tagline -->
+      <div class="max-w-2xl mx-auto py-2">
+        <p class="text-base sm:text-xl font-medium text-slate-200 leading-relaxed">
+          Technologies for Next Generation Defense Electronics Systems
+        </p>
+      </div>
+
+      <!-- Venue Info -->
+      <div class="flex items-center justify-center gap-2 text-xs sm:text-sm text-slate-300">
+        <svg class="w-4 h-4 text-red-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z">
+          </path>
+        </svg>
+        <span>Nalanda, BAE, BEL, Bangalore</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main id="schedules" class="flex-1 max-w-5xl w-full mx-auto px-2 py-4 space-y-16">
+
+    <!-- SECTION 1: TECHNICAL PARALLEL SESSIONS -->
+    <section id="parallel-section" class="scroll-mt-20 space-y-2">
+      <div class="border-l-4 border-blue-600 pl-4 py-1">
+        <h2 class="text-2xl font-bold text-slate-900">Paper Presentation Sessions</h2>
+        <p class="text-xs sm:text-sm text-slate-500">Filtered hall-by-hall</p>
+        <ul class="text-xs sm:text-sm text-slate-600 leading-relaxed m-0 p-0 ml-2">
+          <li>Hall A: Dr. APJ Abdul Kalam Hall</li>
+          <li>Hall B: Sir C. V. Raman Hall</li>
+          <li>Hall C: Prof. Satish Dhawan Hall</li>
+          <li>Hall D: Sir M Visvesvaraya Auditorium</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden">
+        <!-- Filter Header -->
+        <div class="p-4 sm:p-6 bg-slate-50 border-b border-slate-200 space-y-3">
+          <label for="parallelSelect" class="block text-xs font-bold uppercase tracking-wider text-slate-600">
+            Filter by Session:
+          </label>
+          <select id="parallelSelect"
+            class="w-full p-3 text-sm sm:text-base border border-slate-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+            <!-- Day 1 Sessions -->
+            <optgroup label="Day 1">
+              <option value="session-1">Session 1: Computer Vision (Hall A)</option>
+              <option value="session-2">Session 2: Microwave Components (Hall B)</option>
+              <option value="session-3">Session 3: Signal Processing (Hall C)</option>
+              <option value="session-4">Session 4: Detection & Classification (Hall D)</option>
+              <option value="session-5">Session 5: Machine Learning Applications (Hall A)</option>
+              <option value="session-6">Session 6: RF Subsystems (Hall B)</option>
+              <option value="session-7">Session 7: Product Design and Simulations (Hall C)</option>
+              <option value="session-8">Session 8: Electronic Warfare (Hall D)</option>
+            </optgroup>
+            <!-- Day 2 Sessions -->
+            <optgroup label="Day 2">
+              <option value="session-9">Session 9: AI Powered Systems (Hall A)</option>
+              <option value="session-10">Session 10: Crypto & Cyber Security (Hall B)</option>
+              <option value="session-11">Session 11: Communication Systems (Hall C)</option>
+              <option value="session-12">Session 12: Radar Systems (Hall D)</option>
+              <option value="session-13">Session 13: Cognitive Systems (Hall A)</option>
+              <option value="session-14">Session 14: Smart Computing Systems (Hall B)</option>
+              <option value="session-15">Session 15: Autonomous Systems (Hall C)</option>
+              <option value="session-16">Session 16: Photonics Systems (Hall D)</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- Session Info Header -->
+        <div id="parallelMeta" class="p-4 sm:p-6 bg-navy-900 text-white space-y-2">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+        <!-- Papers Container -->
+        <div id="parallelList" class="p-4 sm:p-6 space-y-3 bg-slate-50/50">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-slate-400 py-8 border-t border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 text-center space-y-3 text-xs sm:text-sm">
+      <p class="font-semibold text-slate-300">CRL Technical Symposium — Gyanotsav 2026</p>
+      <p>Technologies for Next Generation Defense Electronics Systems</p>
+      <p class="text-slate-500">Nalanda, BAE, BEL, Bangalore &bull; Nov 11 - Nov 12, 2026</p>
+    </div>
+  </footer>
+
+  <!-- DATA & LOGIC -->
+  <script>
+    // 1. Full Data for Technical Parallel Sessions (session-1 to session-16)
+    const parallelData = {
+      "session-1": {
+        title: "Session 1: Computer Vision",
+        hall: "HALL A: Dr. APJ Abdul Kalam Hall",
+        time: "11:30 - 13:15 (Day 1)",
+        chair: "Smt. Deepika Gupta, GM, DCCS-GAD",
+        cochair: "Shri. Nandakumar S, AGM-NS",
+        papers: [
+          { time: "11:30-11:45", title: "A Lightweight Edge Intelligence Framework for Multi-Camera Vehicle Counting and Vehicle Analytics", id: "0042", author: "Pankaj Kamboj", sbu: "PK" },
+          { time: "11:45-12:00", title: "Training-Free Agentic Temporal Search for Long-Video Question Answering", id: "0062", author: "Shubham Varshney", sbu: "CRL-GAD" },
+          { time: "12:00-12:15", title: "Operationally-Aware Explainability for Transformer-Based Automatic Target Recognition in UAV Imagery", id: "0075", author: "Ritika Sinha", sbu: "CRL-GAD" },
+          { time: "12:15-12:30", title: "Category-Dependent Modality Reliance in Audio-Visual Violence Detection A Survey and a Proposed Efficient Fusion Framework", id: "0183", author: "Gopesh kirad", sbu: "CRL-BG" },
+          { time: "12:30-12:45", title: "An Explainable Hybrid Neural and Rule-Based Framework for Ship Category and Class Identification in ISAR Imagery", id: "0209", author: "Sumit Srivastava", sbu: "NCS" },
+          { time: "12:45-13:00", title: "A Proposed Near-Infrared Face Recognition Framework for Low-Light Access Control Applications", id: "0184", author: "Mohamed Facil T R", sbu: "CRL-BG" },
+          { time: "13:00-13:15", title: "TransFusionDefender- An Adaptive Multi-Model Vision Transformer for Real-Time DDoS Mitigation in Edge Networks", id: "0050", author: "Suraj Mishra", sbu: "CRL-GAD" }
+        ]
+      },
+      "session-2": {
+        title: "Session 2: Microwave Components",
+        hall: "HALL B: Sir C. V. Raman Hall",
+        time: "11:30 - 13:15 (Day 1)",
+        chair: "Shri. Vrushabhendra S H M, In-GM, ANTENNA-GAD",
+        cochair: "Shri. Prakash S P, AGM-PDIC",
+        papers: [
+          { time: "11:30-11:45", title: "X-Band Compact High Gain Multichannel Transmitter and Down Converter with Integrated Monitoring and Reporting System", id: "0018", author: "Yachamaneni Sandeep", sbu: "PDIC" },
+          { time: "11:45-12:00", title: "Design Aspects of a Harmonic Tuned V/UHF Power Amplifier for Communication Radio", id: "0188", author: "S Indumathi", sbu: "CRL-BG" },
+          { time: "12:00-12:15", title: "Compact Ka-Band Monopulse Comparator with Co-Aligned Ports for Track Antenna", id: "0327", author: "Sayyad Shahwaz Ali", sbu: "CRL-BG" },
+          { time: "12:15-12:30", title: "An X-Band Two-Stage E-mode pHEMT Driver Amplifier for CORECHIP Integration", id: "0231", author: "MARY JENNIFER R", sbu: "PDIC" },
+          { time: "12:30-12:45", title: "Design and Validation of Parabolic Grid Reflector with Integrated Horn Feed", id: "0090", author: "AMIT KUMAR GUPTA", sbu: "ANTENNA" },
+          { time: "12:45-13:00", title: "A Multi-Parametric Feature Engineering Approach for Predictive Health Monitoring of Dual-Motor Antenna Systems", id: "0098", author: "Gaurav Kumar", sbu: "ANTENNA" },
+          { time: "13:00-13:15", title: "Design of 60W Asymmetrical Doherty Power Amplifier for 5G applications", id: "0355", author: "Kushan Chakraborty", sbu: "CRL-BG" }
+        ]
+      },
+      "session-3": {
+        title: "Session 3: Signal Processing",
+        hall: "HALL C: Prof. Satish Dhawan Hall",
+        time: "11:30 - 13:15 (Day 1)",
+        chair: "Shri. Mini Nair S, GM-NS1",
+        cochair: "Shri. Jeyagopal P AGM Mkt MR",
+        papers: [
+          { time: "11:30-11:45", title: "Design and Simulation of Free-Flooded Ring Transducers for Sonar System", id: "0076", author: "Basanta Roul", sbu: "PDIC" },
+          { time: "11:45-12:00", title: "Complex Signal Data Processing in RFPS", id: "0093", author: "dubbaka shanker", sbu: "HYD" },
+          { time: "12:00-12:15", title: "AI- Based Predictive Maintenance for HUMSA Sonar Transducer Arrays Integrating Periodic Acoustic Characterization and Real-Time Telemetry", id: "0079", author: "Kotresh Kumar DS", sbu: "NS1" },
+          { time: "12:15-12:30", title: "A Low Complexity Dual Stage Carrier Frequency Offset Implementation on FPGA - A Coarse-to-Fine Approach for Digital Radio Receivers", id: "0181", author: "Shyamsundar Jha", sbu: "CRL-BG" },
+          { time: "12:30-12:45", title: "Keystone Transform based method to resolve Doppler ambiguity in FMCW radar for multi-target scenario", id: "0262", author: "Krishna Arvind Joshi", sbu: "CRL-BG" },
+          { time: "12:45-13:00", title: "Signal Expansion using Burg Method for Improving FMCW Radar Range Resolution", id: "0297", author: "Sherry Gomez", sbu: "CRL-BG" },
+          { time: "13:00-13:15", title: "Design and Experimental Validation of a CPFSK Modulator for Balise-BTM Communication", id: "0339", author: "Alok kumar", sbu: "PDIC" }
+        ]
+      },
+      "session-4": {
+        title: "Session 4: Detection & Classification",
+        hall: "HALL D: Sir M Visvesvaraya Auditorium",
+        time: "11:30 - 13:15 (Day 1)",
+        chair: "Smt. Seema Yadav, CS, CRL-GAD",
+        cochair: "Shri. M Sadasivaiah AGM EW&A",
+        papers: [
+          { time: "11:30-11:45", title: "CSI-Based WiFi Sensing For Motion Detection Using Lightweight Signal Preprocessing and Unsupervised Learning", id: "0255", author: "NAIR PARVATHY ARUN", sbu: "CRL-BG" },
+          { time: "11:45-12:00", title: "A Scalable Data Lakehouse Architecture for Ship Data Trend Analysis and Maritime Operational Intelligence", id: "0074", author: "Srajan Ratti", sbu: "CRL-GAD" },
+          { time: "12:00-12:15", title: "Optimized Multi-Domain Feature Engineering for Seismic Activity Classification", id: "0201", author: "Abhishek Kumar", sbu: "CRL-GAD" },
+          { time: "12:15-12:30", title: "Accuracy and Robustness in RF-Based Drone Identification Three Stress Tests on DroneRF", id: "0291", author: "Priya Rawat", sbu: "CRL-GAD" },
+          { time: "12:30-12:45", title: "LLM-Guided World Modeling for Explainable Spatial Spectral Feature Classification", id: "0292", author: "Hawa Singh", sbu: "CRL-BG" },
+          { time: "12:45-13:00", title: "Real-Time RF Based Drone Detection and Angle of Arrival Estimation Using FPGA", id: "0333", author: "Manish Kumar Pandey", sbu: "CRL-GAD" },
+          { time: "13:00-13:15", title: "Offline Edge-AI-Based 2D/3D Motion Tracking and Activity Classification Using Inertial and Barometric Sensor", id: "0351", author: "Naveen Kumar M", sbu: "CRL-BG" }
+        ]
+      },
+      "session-5": {
+        title: "Session 5: Machine Learning Applications",
+        hall: "HALL A: Dr. APJ Abdul Kalam Hall",
+        time: "15:00 - 17:15 (Day 1)",
+        chair: "Shri. Rakesh Kumar, GM-BSTC",
+        cochair: "Dr. Ramesh Chaveli, AGM-TP",
+        papers: [
+          { time: "15:00-15:15", title: "SURAKSHA AI A Threat Prediction Model for the Early-Stage Software Development Lifecycle", id: "0127", author: "Varun Srikakulam", sbu: "SOFTWARE" },
+          { time: "15:15-15:30", title: "Deep 3D U-Net Architecture for Hyperspectral Image Segmentation in Advanced Driver Assistance Systems.", id: "0169", author: "Vivek Kumar Singh Tomar", sbu: "CRL-GAD" },
+          { time: "16:00-16:15", title: "Radar Emitter Classification Using Vector Embedded AI ML Models", id: "0096", author: "Anurag", sbu: "HYD" },
+          { time: "16:15-16:30", title: "MeteoCore - A State Driven Framework for Coordinated Multi-Effect Weather Rendering in Unreal Engine", id: "0128", author: "ADARSH KUMAR", sbu: "CRL-GAD" },
+          { time: "16:30-16:45", title: "A Comparative Study of Machine Learning Models for Predictive WiFi Roaming in High-Mobility Vehicular Environments", id: "0175", author: "Anantha Bhargav", sbu: "CRL-BG" },
+          { time: "16:45-17:00", title: "A Conceptual Multi-Scale CNN Transformer Architecture with Adaptive Feature Recalibration for Low Latency Automatic Modulation Classification in Electronic Warfare", id: "0223", author: "Sada Vriksha", sbu: "HYD" },
+          { time: "17:00-17:15", title: "Mission-Aware Explainable Zero-Trust Authorization using Hybrid AI for Defense Systems", id: "0302", author: "Karan Sonkar", sbu: "SOFTWARE" }
+        ]
+      },
+      "session-6": {
+        title: "Session 6: RF Subsystems",
+        hall: "HALL B: Sir C. V. Raman Hall",
+        time: "15:00 - 17:15 (Day 1)",
+        chair: "Smt. Hemalatha B J, GM-MR",
+        cochair: "Shri. Rajkumar A, AGM PDIC",
+        papers: [
+          { time: "15:00-15:15", title: "Design Of Fast Startup Wide Input Power Supply Unit For Railway Tele-Powering Applications", id: "0110", author: "Venugopal B", sbu: "PDIC" },
+          { time: "15:15-15:30", title: "An automatic Quiescent point stabilization for GaN devices", id: "0282", author: "Anand M Tripathi", sbu: "CRL-BG" },
+          { time: "16:00-16:15", title: "Design and Analysis of Gain Equalizer For Wideband Cascaded RF Amplifiers", id: "0260", author: "Dr Joydeb Mandal", sbu: "CRL-BG" },
+          { time: "16:15-16:30", title: "Highly Integrated X-Band Octal Transmit-Receive Module for Active Array Applications", id: "0322", author: "Varsha G H", sbu: "PDIC" },
+          { time: "16:30-16:45", title: "Compact Stripline Fed 8-way Radial Power Combiner for Ku Band SSPA", id: "0285", author: "KOTLA RUPASAMYUKTHA", sbu: "CRL-BG" },
+          { time: "16:45-17:00", title: "Ultra-selective Bandpass Filter with High Stop Band Attenuation for LYNX U2 Fire Control System", id: "0343", author: "Sayyad Shahwaz Ali", sbu: "CRL-BG" },
+          { time: "17:00-17:15", title: "Multilayer Microstrip RHCP Antenna for IRNSS Applications", id: "0203", author: "Sanu Roy", sbu: "CRL-BG" }
+        ]
+      },
+      "session-7": {
+        title: "Session 7: Product Design and Simulations",
+        hall: "HALL C: Prof. Satish Dhawan Hall",
+        time: "15:00 - 17:15 (Day 1)",
+        chair: "Shri. PT Kumaran, GM Comps",
+        cochair: "Shri. Anil Kumar Patra AGM MR",
+        papers: [
+          { time: "15:00-15:15", title: "Enhancing Thermal Uniformity in Radar Cold Plates through Passive Flow Redistribution", id: "0039", author: "Dillip Mishra", sbu: "MR" },
+          { time: "15:15-15:30", title: "Design Optimization and Experimental Validation of an Underwater Propeller", id: "0143", author: "Anurag Arjunan", sbu: "PDIC" },
+          { time: "16:00-16:15", title: "Coupled Aerodynamics, Structural and Modal Analysis of 3D-Printed Wing Profile for Expendable Fixed-Wing UAVs", id: "0144", author: "NAGAPPA", sbu: "PDIC" },
+          { time: "16:15-16:30", title: "Numerical Estimation of Wind Drag and Dynamic Torque on a Rotating Shaped Parabolic Reflector", id: "0234", author: "Vinay Sharma", sbu: "ANTENNA" },
+          { time: "16:30-16:45", title: "Supersonic Steady-State CFD Analysis of a Surface-to-Air Missile", id: "0328", author: "AADARSH BAISH", sbu: "CRL-BG" },
+          { time: "16:45-17:00", title: "Finite Element Investigation of Rotary Frame Structural Response Under Varying Wind Loading Profiles", id: "0342", author: "ARPIT GARG", sbu: "ANTENNA" },
+          { time: "17:00-17:15", title: "Pulsed Nd YAG Laser Hermetic Sealing of Aluminium Electronic Module Enclosures Design Rules and Process Implementation.", id: "0353", author: "Nehal Singh", sbu: "COMP" }
+        ]
+      },
+      "session-8": {
+        title: "Session 8: Electronic Warfare",
+        hall: "HALL D: Sir M Visvesvaraya Auditorium",
+        time: "15:00 - 17:15 (Day 1)",
+        chair: "Shri. Srinivas K, ED-PDIC",
+        cochair: "Smt. Charu S. Tripathi, AGM, CoE-EW&P",
+        papers: [
+          { time: "15:00-15:15", title: "Optimizing Emitter Direction Finding in Multi Panel BLI systems through PDW rejection", id: "0084", author: "Naveen Kumar k", sbu: "HYD" },
+          { time: "15:15-15:30", title: "Design and parametric optimization of composite reflector for antenna subjected to wind load", id: "0267", author: "Krishn Kumar Gupta", sbu: "ANTENNA" },
+          { time: "16:00-16:15", title: "A Low Harmonic, Phase-Coherent x8 Frequency Clock Multiplier", id: "0198", author: "YENDA DILLESWARARAO", sbu: "PDIC" },
+          { time: "16:15-16:30", title: "Dynamic Residual-Based Maximum-Likelihood Estimator for Bearings-Only Emitter Geolocation", id: "0100", author: "Sheik Naseema", sbu: "HYD" },
+          { time: "16:30-16:45", title: "Efficient Hardware Implementation of Cubic Spline Interpolation-Based Channel Estimation and TF Detection in ZP-OTFS Systems", id: "0273", author: "Reenamol Jees", sbu: "COE-CM" },
+          { time: "16:45-17:00", title: "Design and Development of Antenna Calibration Platform for Near-Field Test Range", id: "0207", author: "Bangari Prudhviraj", sbu: "ANTENNA" },
+          { time: "17:00-17:15", title: "A Continuous Tunable True Time Delay Line Using Signal Interference Techniques", id: "0256", author: "Dr Joydeb Mandal", sbu: "CRL-BG" }
+        ]
+      },
+      "session-9": {
+        title: "Session 9: AI Powered Systems",
+        hall: "HALL A: Dr. APJ Abdul Kalam Hall",
+        time: "10:30 - 12:45 (Day 2)",
+        chair: "Smt. Ruchi Pant, GM-TP",
+        cochair: "Shri. Shashikant Yashwant Chaudhari, AGM-PDIC",
+        papers: [
+          { time: "10:30-10:45", title: "LOGIC Logistics Oriented Ground Intelligent Companion", id: "0027", author: "Shrajan Jain", sbu: "CRL-GAD" },
+          { time: "10:45-11:00", title: "An Intelligent Enterprise Lakehouse Framework for Metadata-Aware Data Engineering and AI-Driven Analytics", id: "0086", author: "Anuj Kumar", sbu: "CRL-GAD" },
+          { time: "11:00-11:15", title: "AI Data Shield - An Intelligence Driven Approach to Preventing Data Leakage", id: "0132", author: "Mayank Jatav", sbu: "CRL-GAD" },
+          { time: "11:15-11:30", title: "Explainable AI for Predictive Maintenance in Industrial Automation", id: "0134", author: "Yaman Kurrey", sbu: "PDIC" },
+          { time: "11:30-11:45", title: "Consistency over Relevance A Controlled Study of Source-Consistency Hallucination in Multi-Source Retrieval-Augmented Generation", id: "0168", author: "Chirde Vaibhav Rajesh", sbu: "CRL-BG" },
+          { time: "11:45-12:00", title: "Reward-Guided Lightweight Neural Architecture Search using Double Deep Reinforcement Learning", id: "0228", author: "Vyayavaram Venkat Sai Rohith", sbu: "PDIC" },
+          { time: "12:00-12:15", title: "Intelligent Skies AI Driven Controller Pilot Speech Recognition for Next-Generation Air Traffic Management", id: "0232", author: "Chandramani Adil", sbu: "CRL-GAD" },
+          { time: "12:15-12:30", title: "Knowledge-Enhanced MCQA, Dynamic Knowledge Graph Integration, Option Reasoning, and Confidence Scoring", id: "0321", author: "Arunima Roy", sbu: "CRL-BG" },
+          { time: "12:30-12:45", title: "Physics-Guided Neural State Estimation", id: "0301", author: "Yerram Deekshith Kumar", sbu: "CRL-GAD" }
+        ]
+      },
+      "session-10": {
+        title: "Session 10: Crypto & Cyber Security",
+        hall: "HALL B: Sir C. V. Raman Hall",
+        time: "10:30 - 12:45 (Day 2)",
+        chair: "Smt. Rekha Sastry, CTO-COMM",
+        cochair: "Shri. Rakesh Kumar Mall AGM Comp",
+        papers: [
+          { time: "10:30-10:45", title: "A Kubernetes-Native Autonomous Cyber Defense Platform with MLOps and Hybrid Detection for On-Premises C5I Networks", id: "0045", author: "Nishkarsh Patel", sbu: "CRL-GAD" },
+          { time: "10:45-11:00", title: "A Multi-Context Aware SOAR Framework Using Retrieval-Augmented Generation for Intelligent Incident Response", id: "0102", author: "Rajat", sbu: "CRL-GAD" },
+          { time: "11:00-11:15", title: "Agentic Cognitive Electronic Warfare - A Multi-Agent Reinforcement Learning-MARL Framework for Autonomous Radar Deception and Spectrum Dominance", id: "0073", author: "Mukesh Prajapat", sbu: "CRL-GAD" },
+          { time: "11:15-11:30", title: "A Formally Specified Parallel and Adaptive Architecture for Diehard Randomness Testing", id: "0218", author: "Anurag Parashar", sbu: "CRL-BG" },
+          { time: "11:30-11:45", title: "A Generic Runtime and Station Specific Plugin Architecture for Configurable Computer Based Interlocking Systems", id: "0233", author: "Ansh Kumar", sbu: "CRL-GAD" },
+          { time: "11:45-12:00", title: "A Hybrid Encryption Model for Secure Military IoT Communication Using RSA/ECC and AES-256-GCM", id: "0243", author: "Neeraj Solanki", sbu: "HYD" },
+          { time: "12:00-12:15", title: "WAFShield A Machine Learning Based Web Application Firewall for Accurate HTTP Attack Detection", id: "0275", author: "Dharmendra Tanwar", sbu: "CRL-GAD" },
+          { time: "12:15-12:30", title: "Realization of Quantum Random number generator by using Arrival Time of the photon for high security applications", id: "0305", author: "RISHABH BAHORIA", sbu: "CRL-BG" },
+          { time: "12:30-12:45", title: "A Layered PKI Framework for Automated Certificate Lifecycle Management Across Heterogeneous Endpoints in Large Enterprise Networks", id: "0016", author: "SURABHI ASHOK BABU", sbu: "CRL-BG" }
+        ]
+      },
+      "session-11": {
+        title: "Session 11: Communication Systems",
+        hall: "HALL C: Prof. Satish Dhawan Hall",
+        time: "10:30 - 12:45 (Day 2)",
+        chair: "Shri. M Ramesh, CTO-EW&P",
+        cochair: "Shri. Aman Choudhary, AGM, D&E-MCE",
+        papers: [
+          { time: "10:30-10:45", title: "Explanation-Stable Intrusion Detection , An XAI-Guided Adversarial Defense for Defense Network Security", id: "0047", author: "Thejaswini Y R", sbu: "SOFTWARE" },
+          { time: "10:45-11:00", title: "User-centric SIEM Approach for Enhanced Insider Threat Analysis and Detection", id: "0070", author: "Anmol Raj", sbu: "CRL-GAD" },
+          { time: "11:00-11:15", title: "A secure encryption middleware for file transfer on private network of IPFS and Hyperledger fabric", id: "0149", author: "K ANU AYYAPPAN", sbu: "CRL-BG" },
+          { time: "11:15-11:30", title: "Decentralized QoS Forecasting in Resource Constrained Ad Hoc Networks using Federated MLP", id: "0221", author: "AMNAJASMIN K", sbu: "CRL-BG" },
+          { time: "11:30-11:45", title: "PAPR Reduction Techniques for Code Multiplexed DSSS based Data Link Systems", id: "0250", author: "YERROLLA PAVAN KUMAR", sbu: "CRL-BG" },
+          { time: "11:45-12:00", title: "Survey on Anti Jamming & Anti Spoofing Algorithms for GNSS Quad Band CRPA Antenna", id: "0178", author: "Surya Narayanan S", sbu: "CRL-BG" },
+          { time: "12:00-12:15", title: "Performance Analysis of 5G NR PDSCH over NTN Channels with Integrated Doppler Pre-compensation.", id: "0277", author: "S R DEEKSHITH PRASAD", sbu: "CRL-BG" },
+          { time: "12:15-12:30", title: "Raspberry Pi Controlled PIN-Diode Reconfigurable Intelligent Surface for Wireless Communications", id: "0280", author: "Subham Biswas", sbu: "CRL-BG" },
+          { time: "12:30-12:45", title: "FPGA Realization of Real-Time PCMA Systems for Satellite Communication Links", id: "0308", author: "Divya N", sbu: "CRL-BG" }
+        ]
+      },
+      "session-12": {
+        title: "Session 12: Radar Systems",
+        hall: "HALL D: Sir M Visvesvaraya Auditorium",
+        time: "10:30 - 12:45 (Day 2)",
+        chair: "Smt. Manjula Devi N, GM-MS",
+        cochair: "Shri. Vidyanand P, AGM, D&E-MR",
+        papers: [
+          { time: "10:30-10:45", title: "Range Migration Correction for Enhanced Detection of Hypersonic Targets Using Shear Transform", id: "0043", author: "Sriharsha Nag T S", sbu: "CRL-BG" },
+          { time: "10:45-11:00", title: "Design and Implementation of a Modular Python-Based Ethernet Control and Monitoring System for High-Power Amplifiers with Integrated Calibration and Diagnostics", id: "0044", author: "ABHAY KUMAR YADAV", sbu: "NS2" },
+          { time: "11:00-11:15", title: "GPGPU based Real-time Signal Processing for AESA Radars", id: "0140", author: "K. Revati Suresh", sbu: "CRL-BG" },
+          { time: "11:15-11:30", title: "Practical Methodology for Generating Site-Specific Monopulse Calibration Tables from Operational SSR Reply Data", id: "0193", author: "Ankur Singh", sbu: "RADAR" },
+          { time: "11:30-11:45", title: "Programmable Waveform and Timing Generator Module for 3D Surveillance Radar", id: "0226", author: "NULL", sbu: "NULL" },
+          { time: "11:45-12:00", title: "Design of a Scalable Heterogeneous Computing System for Real-Time Perimeter Surveillance Radar", id: "0242", author: "Kurella Durga Rao", sbu: "CRL-BG" },
+          { time: "12:00-12:15", title: "A Reconfigurable FPGA-Based Digital Beamforming Architecture Using Real-Time Parameter Streaming for Scalable Phased Array Systems", id: "0249", author: "NIRBHAY KUMAR SINGH", sbu: "COE-CRW" },
+          { time: "12:15-12:30", title: "Range Migration Correction for High-Speed Maneuvering Multi Targets via Second-Order Keystone Transform and Generalized De-Chirp Processing", id: "0265", author: "Karthikeyan P", sbu: "COE-CRW" },
+          { time: "12:30-12:45", title: "Design & Implementation of Reconfigurable P4 Polyphase Based Radar Waveform Generator", id: "0269", author: "Raghavendra Singh", sbu: "RADAR" }
+        ]
+      },
+      "session-13": {
+        title: "Session 13: Cognitive Systems",
+        hall: "HALL A: Dr. APJ Abdul Kalam Hall",
+        time: "15:15 - 17:30 (Day 2)",
+        chair: "Shri. Rajendra Sambrani, I/C GM, Seekers/RF&IR",
+        cochair: "Shri. Paresh Chandra Nayak, AGM, Seeker",
+        papers: [
+          { time: "15:15-15:30", title: "Physics-Informed AI for Time-Based Separation - Optimizing Runway Throughput via Wake Vortex Dynamics", id: "0299", author: "NIKHIL SHUKLA", sbu: "CRL-GAD" },
+          { time: "15:30-15:45", title: "HFCR-6G Hybrid Federated Cognitive Radio Framework for Intelligent Anti-Jamming and Spectrum Management in 6G Networks", id: "0247", author: "avik das", sbu: "MILCOM" },
+          { time: "15:45-16:00", title: "Area Efficient M Term Karatsuba Decomposition for Finite Field Multiplier", id: "0274", author: "Tamilarasan A", sbu: "CRL-BG" },
+          { time: "16:00-16:15", title: "Enhancing Thermal Dissipation Paths in Hermetically Sealed Underwater Electronics for Improved System Reliability", id: "0354", author: "Karuppaiah R", sbu: "PDIC" },
+          { time: "16:15-16:30", title: "Performance Evaluation of GENEX Guidance for Impact-Angle-Constrained Trajectory Shaping in Glide Bombs", id: "0350", author: "Bhagya S Prasanth", sbu: "CRL-BG" },
+          { time: "16:30-16:45", title: "Adaptive Receiver Noise Estimation for Bayesian Direction Finding Using Spinning and Omnidirectional Antennas", id: "0288", author: "ROHITH JOSHUA GUMPULA", sbu: "HYD" }
+        ]
+      },
+      "session-14": {
+        title: "Session 14: Smart Computing Systems",
+        hall: "HALL B: Sir C. V. Raman Hall",
+        time: "15:15 - 17:30 (Day 2)",
+        chair: "Shri. Jagadish Kumar G, GM-CHN",
+        cochair: "Shri Venkateswara Rao G, AGM EW&A",
+        papers: [
+          { time: "15:15-15:30", title: "Numerical Simulation of Aerosol Transport and Collection Efficiency in an Air Contamination Detection System Using CFD techniques", id: "0020", author: "Vivek Thite", sbu: "PN" },
+          { time: "15:30-15:45", title: "Machine Learning-Based Prediction of PCB Natural Frequency Using Geometric Dimensions and Copper Percentage", id: "0021", author: "Lokeswara Rao Morla", sbu: "PDIC" },
+          { time: "15:45-16:00", title: "CPU-Optimized S-57 ENC Visualization with Topology-Preserving LOD and Radar PPI Fusion", id: "0082", author: "Gautam Verma", sbu: "CRL-GAD" },
+          { time: "16:00-16:15", title: "A Multi-protocol Fail-Safe Bootloader Framework for Remote Firmware Updates in Automatic Train Protection Systems", id: "0103", author: "Abhinav Pathak", sbu: "CRL-GAD" },
+          { time: "16:15-16:30", title: "High-Capacity Multi-Format Media Server with Dynamic Pipeline Construction, Automated NAT Traversal, and UAV Geospatial Fusion", id: "0109", author: "Anushka Uniyal", sbu: "CRL-GAD" },
+          { time: "16:30-16:45", title: "Flame Photometry based Real-Time Detection and Classification of Biological Threats in an Environment", id: "0148", author: "Killa Kishore Babu", sbu: "CRL-BG" },
+          { time: "16:45-17:00", title: "An Integrated Framework for Automated CIS Benchmark Compliance on Red Hat Enterprise Linux", id: "0150", author: "Pradeep Kumar Tiwari", sbu: "CRL-BG" },
+          { time: "17:00-17:15", title: "Hard Real-time Timers in Linux on x86 Architecture", id: "0182", author: "Sreenivas S", sbu: "CRL-BG" },
+          { time: "17:15-17:30", title: "Heterogeneous Computing Architecture for AI-Enabled ELINT Processors", id: "0095", author: "Dileep Kumar", sbu: "HYD" }
+        ]
+      },
+      "session-15": {
+        title: "Session 15: Autonomous Systems",
+        hall: "HALL C: Prof. Satish Dhawan Hall",
+        time: "15:15 - 17:30 (Day 2)",
+        chair: "Shri. Hemant Kumar Gupta, GM-US",
+        cochair: "Shri. Rajesh Motta N, AGM-CHN",
+        papers: [
+          { time: "15:15-15:30", title: "HSTDG AM MAPPO A Cognitive Swarm Intelligence Framework for Autonomous Search and Strike Operations", id: "0024", author: "VINOD KUMAR", sbu: "CRL-GAD" },
+          { time: "15:30-15:45", title: "Interaction-Time Feasibility and Risk Estimation for Safe Teleoperated Robotic Manipulation in Unknown Environment", id: "0026", author: "Pooja Goswami", sbu: "CRL-GAD" },
+          { time: "15:45-16:00", title: "Policy-Materialized Access Control in a Multi-Tenant C4I Maritime Domain Awareness", id: "0041", author: "Akash Chahar", sbu: "CRL-GAD" },
+          { time: "16:00-16:15", title: "A Modular and Numerically Robust Statistical Gating Framework for Real-Time Radar Multi-Target Tracking", id: "0118", author: "RAKSHITH G M", sbu: "COE-CRW" },
+          { time: "16:15-16:30", title: "Real-Time LiDAR-Based Perception for Static and Dynamic Obstacle Detection and Tracking on GNSS-Only Autonomous Surface Vessels", id: "0158", author: "FAHAD.A.M", sbu: "CRL-BG" },
+          { time: "16:30-16:45", title: "Evolution of Air Surveillance Radar Processing Architectures An Architectural Perspective on Convergence with Multifunction Radar Systems", id: "0159", author: "Avinash Kaur", sbu: "RADAR" },
+          { time: "16:45-17:00", title: "A Generic Modular Software Architecture for the Report Processing Layer in Modern Radar Systems", id: "0161", author: "Shailendra Kumar", sbu: "CRL-GAD" },
+          { time: "17:00-17:15", title: "Dual-Mode Path-Following Control of an Underactuated Autonomous Underwater Vehicle", id: "0272", author: "KOMMURI HIMA BINDU", sbu: "CRL-BG" },
+          { time: "17:15-17:30", title: "Visual Model-Based Automation of Traction SCADA HMI and DSS", id: "0336", author: "Sneha Prajapati", sbu: "CRL-GAD" }
+        ]
+      },
+      "session-16": {
+        title: "Session 16: Photonics Systems",
+        hall: "HALL D: Sir M Visvesvaraya Auditorium",
+        time: "15:15 - 17:30 (Day 2)",
+        chair: "Shri. Dhirendra N Pandey, GM-MC",
+        cochair: "Shri. Ravindra Y. Chaudhari, AGM, D&E-LS/PN",
+        papers: [
+          { time: "15:15-15:30", title: "Optical design of shared aperture SWIR/VNIR optical system for Long Range Spotter application", id: "0155", author: "arjun", sbu: "COE-EL" },
+          { time: "15:30-15:45", title: "Photonic-Assisted RF Self-Interference Cancellation System for 5G In-Band Full-Duplex Transceivers", id: "0165", author: "DIVYA SREE K", sbu: "CRL-BG" },
+          { time: "15:45-16:00", title: "A Quantum Noise Based True Random Number Generator Utilizing Stochastic Detector Fluctuations", id: "0200", author: "Naresh Sothuku", sbu: "CRL-BG" },
+          { time: "16:00-16:15", title: "Comparative Analysis of Enhancement and Thresholding Methods for Single Frame Small Infrared Target Detection", id: "0230", author: "Hima C", sbu: "CRL-BG" },
+          { time: "16:15-16:30", title: "Automated Detection of Small Airborne Targets in Electro-Optical Infrared Imagery Using Multi Frame Input", id: "0257", author: "Anubhav Mittal", sbu: "NCS" },
+          { time: "16:30-16:45", title: "Photonics-based Multi-Band Coherent Transceiver for Radar Systems", id: "0264", author: "RUPAM BISWAS", sbu: "CRL-BG" },
+          { time: "16:45-17:00", title: "Indigenous Development of Ultra-High Vacuum Dewar Assembly for Cooled Thermal Imaging Systems", id: "0284", author: "Vivek Thite", sbu: "PN" },
+          { time: "17:00-17:15", title: "Comparison of Virtual Image formation through prism and bulk optics architecture and its analysis in Head Level Display", id: "0317", author: "Abhishek Tiwari", sbu: "PDIC" },
+          { time: "17:15-17:30", title: "Design,Fabrication and MIL-STD Qualification of a Fiber Optic Uplink/Downlink Network for Digital MFSTAR Radar Featuring Sub-30 ns Optical Skew.", id: "0326", author: "CHETAN AIVALLI", sbu: "ADSN" }
+        ]
+      }
+    };
+
+    // Render Function using EXACT User Design Structure
+    function renderParallelSession(sessionId) {
+      const session = parallelData[sessionId];
+      const metaEl = document.getElementById("parallelMeta");
+      const listEl = document.getElementById("parallelList");
+
+      if (!session) {
+        metaEl.innerHTML = "<h3>Session data coming soon</h3>";
+        listEl.innerHTML = "";
+        return;
+      }
+
+      // Render Session Info Header exactly as requested
+      metaEl.innerHTML = `
+        <h3 class="text-lg font-bold text-yellow-400">${session.title}</h3>
+        <p class="text-xs sm:text-sm text-slate-300">
+          📍 <strong>${session.hall}</strong><br>
+          ⏰ <strong>${session.time}</strong><br>
+          👤 <em>Chair:</em> ${session.chair}<br>
+          👤 <em>Co-chair:</em> ${session.cochair}
+        </p>
+      `;
+
+      // Render Paper Cards using your exact DOM structure
+      listEl.innerHTML = session.papers.map(paper => `
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition border-l-4 border-l-blue-600">
+          <div class="text-xs font-bold text-blue-600 uppercase tracking-wide">⏱ ${paper.time}</div>
+          <div class="font-semibold text-slate-900 mt-1 text-sm sm:text-base leading-snug">${paper.title}</div>
+          <div class="flex items-center justify-between mt-3 text-xs text-slate-500 pt-2 border-t border-slate-100">
+            <span>👤 ${paper.author} <small class="text-slate-400">(${paper.id})</small></span>
+            <span class="bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-semibold border border-slate-200">${paper.sbu}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Event Listeners for Dropdowns
+    document.addEventListener("DOMContentLoaded", () => {
+      const parallelSelect = document.getElementById("parallelSelect");
+
+      if (parallelSelect) {
+        parallelSelect.addEventListener("change", (e) => renderParallelSession(e.target.value));
+        renderParallelSession(parallelSelect.value);
+      }
+
+    });
+  </script>
+</body>
+
+</html>
